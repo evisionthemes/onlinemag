@@ -5,7 +5,7 @@ global $onlinemag_customizer_defaults;
 
 /*defaults values*/
 $onlinemag_customizer_defaults['onlinemag-site-identity-color'] = '#313131';
-$onlinemag_customizer_defaults['onlinemag-primary-color'] = '#E64946';
+$onlinemag_customizer_defaults['onlinemag-primary-color'] = '#ff6600';
 $onlinemag_customizer_defaults['onlinemag-color-reset'] = '';
 
 /**
