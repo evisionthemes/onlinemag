@@ -153,7 +153,7 @@ if ( ! function_exists( 'onlinemag_page_start' ) ) :
  */
 function onlinemag_page_start() {
 ?>
-    <div id="page" class="site">
+    <div id="page" class="site container clearfix">
 <?php
 }
 endif;
@@ -190,77 +190,28 @@ if ( ! function_exists( 'onlinemag_header' ) ) :
 function onlinemag_header() {
     global $onlinemag_customizer_all_values;
     ?>
-    <header class="wrapper top-header">
-        <div class="container">
-            <div class="wrap-inner">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 top-header-left">
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-tinker']) { ?>
-                            <div class="noticebar">
-                                <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>
-                                    <span class="notice-title"><?php echo esc_html($onlinemag_customizer_all_values['onlinemag-header-tinker-title']); ?></span>
-                                <?php } ?>
-                                <div class="ticker">
-                                    <div id="cycle-slideshow-ticker" class="cycle-slideshow"
-                                        data-cycle-log="false"
-                                        data-cycle-swipe=true
-                                        data-cycle-timeout=5000
-                                        data-cycle-fx=scrollVert
-                                        data-cycle-speed=1000
-                                        data-cycle-carousel-fluid=true
-                                        data-cycle-carousel-visible=5
-                                        data-cycle-pause-on-hover=true
-                                        data-cycle-auto-height=container
-                                        data-cycle-slides="> div">
-                                            <?php $onlinemag_tinker_args = array(
-                                                'post_type' => 'post',
-                                                'posts_per_page' => absint( $onlinemag_customizer_all_values['onlinemag-header-no-of-tinker']) ,
-                                                'ignore_sticky_posts' => 1,
-                                            );
-                                            $onlinemag_home_tinker_post_query = new WP_Query($onlinemag_tinker_args);
-                                            if ($onlinemag_home_tinker_post_query->have_posts()) :
-                                                while ($onlinemag_home_tinker_post_query->have_posts()) : $onlinemag_home_tinker_post_query->the_post();
-                                                    ?>
-                                                    <div class="slide-item">
-                                                        <a href="<?php the_permalink(); ?>">
-                                                            <span class="notice-content"><?php the_title(); ?></span>
-                                                        </a>
-                                                    </div>
-                                                <?php endwhile; 
-                                                wp_reset_postdata();
-                                            endif; ?>
-                                        </div>
-                                    <div class="cycle-pager" id="slide-pager"></div>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 top-header-right">
-                        <?php if (has_nav_menu('social' )) { ?>
-                            <div class="social-widget evision-social-section social-icon-only bottom-tooltip">
-                                <?php
-                                    wp_nav_menu( array( 
-                                        'theme_location' => 'social', 
-                                        'link_before' => '<span>',
-                                        'link_after'=>'</span>' , 
-                                        'menu_id' => 'social-menu',
-                                        'fallback_cb' => false,
-                                    ) );
-                                ?>
-                            </div>
-                        <?php } ?>
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-date']) { ?>
-                            <div class="timer">
-                                <?php $time = current_time('l, M j, Y');
-                                echo esc_attr($time);
-                                 ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 top-header-right">
+        <?php if (has_nav_menu('social' )) { ?>
+            <div class="social-widget evision-social-section social-icon-only bottom-tooltip col-md-6">
+                <?php
+                   wp_nav_menu( array( 
+                        'theme_location' => 'social', 
+                        'link_before' => '<span>',
+                        'link_after'=>'</span>' , 
+                        'menu_id' => 'social-menu',
+                        'fallback_cb' => false,
+                    ) );
+                ?>
             </div>
-        </div>
-    </header>
+            <?php } ?>
+            <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-date']) { ?>
+            <div class="timer col-md-6">
+               <?php $time = current_time('l, M j, Y');
+                    echo esc_attr($time);
+                    ?>
+            </div>
+        <?php } ?>
+    </div>
     <header id="masthead" class="wrapper wrap-head site-header">
         <div class="wrapper wrapper-site-identity">
             <div class="container">
@@ -296,6 +247,7 @@ function onlinemag_header() {
             </div>
         </div>
     </header><!-- #masthead -->
+
 <?php 
 }
 endif;
@@ -352,19 +304,57 @@ function onlinemag_navigation_page_start() {
                             </div>
                         </div><!-- site-header-menu -->
                     </div>
-                </div>
-                <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
-                    <div class="nav-buttons">
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) { ?>
-                            <div class="button-list">
-                                <a href="<?php echo esc_url(get_home_url()); ?>"><i class="fa fa-home"></i></a>
-                            </div>
-                        <?php } ?>
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) { ?>
-                            <div class="button-list">
-                                <a href="<?php echo esc_url( home_url( '/?random=1' ) ); ?> "><i class="fa fa-random"></i></a>
-                            </div>
-                        <?php } ?>
+                </div>              
+            </div>
+        </div>
+    </nav>
+     <header class="wrapper top-header">
+        <div class="container">
+            <div class="wrap-inner">
+                <div class="row">
+                    <div class="col-xs-11 col-sm-11 col-md-11 top-header-left">
+                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-tinker']) { ?>
+                            <div class="noticebar">
+                                <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>
+                                    <span class="notice-title"><?php echo esc_html($onlinemag_customizer_all_values['onlinemag-header-tinker-title']); ?></span>
+                                <?php } ?>
+                                <div class="ticker">
+                                    <div id="cycle-slideshow-ticker" class="cycle-slideshow"
+                                        data-cycle-log="false"
+                                        data-cycle-swipe=true
+                                        data-cycle-timeout=5000
+                                        data-cycle-fx=scrollVert
+                                        data-cycle-speed=1000
+                                        data-cycle-carousel-fluid=true
+                                        data-cycle-carousel-visible=5
+                                        data-cycle-pause-on-hover=true
+                                        data-cycle-auto-height=container
+                                        data-cycle-slides="> div">
+                                            <?php $onlinemag_tinker_args = array(
+                                                'post_type' => 'post',
+                                                'posts_per_page' => absint( $onlinemag_customizer_all_values['onlinemag-header-no-of-tinker']) ,
+                                                'ignore_sticky_posts' => 1,
+                                            );
+                                            $onlinemag_home_tinker_post_query = new WP_Query($onlinemag_tinker_args);
+                                            if ($onlinemag_home_tinker_post_query->have_posts()) :
+                                                while ($onlinemag_home_tinker_post_query->have_posts()) : $onlinemag_home_tinker_post_query->the_post();
+                                                    ?>
+                                                    <div class="slide-item">
+                                                        <a href="<?php the_permalink(); ?>">
+                                                            <span class="notice-content"><?php the_title(); ?></span>
+                                                        </a>
+                                                    </div>
+                                                <?php endwhile; 
+                                                wp_reset_postdata();
+                                            endif; ?>
+                                        </div>
+                                    <div class="cycle-pager" id="slide-pager"></div>
+                                </div>
+                            </div>                            
+                        <?php } ?>                        
+                    </div> 
+                      <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
+                    <div class="nav-buttons col-md-1">                        
                         
                         <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
                             <div class="button-list">
@@ -382,10 +372,11 @@ function onlinemag_navigation_page_start() {
                             </div>
                         <?php } ?>
                     </div>
-                <?php } ?>
+                <?php } ?>                 
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
     <section class="wrapper">
         <div id="content" class="site-content">
 <?php
