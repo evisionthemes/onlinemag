@@ -43,7 +43,6 @@ if (!function_exists('onlinemag_single_page_title')) :
 										<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'onlinemag' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 									<?php }
 									else{ ?>
-											<h1 class="entry-title"><?php echo (esc_html__( 'Latest Blog', 'onlinemag' )); ?></h1>
 									<?php }
 									?>
 								</div>
