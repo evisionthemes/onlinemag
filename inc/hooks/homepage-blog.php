@@ -47,7 +47,7 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                       <?php 
                       $onlinemag_logs_args = array(
                           'post_type' => 'post',
-                          'cat' => $onlinemag_blog_cat_posts_ids,
+                          'category_name' => $onlinemag_category,
                           'ignore_sticky_posts' => true,
                           'posts_per_page' => 4,
                       );
