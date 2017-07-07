@@ -12,6 +12,13 @@ jQuery(document).ready(function ($) {
       $('#site-header-menu').addClass('open').css({'transform':'scale(1)','borderRadius':'0'});
     });
 
+  //hide and show search 
+         $(".nav-buttons").click(function(){
+          console.log('helloworld');
+             $("#top-search").slideToggle("400");
+          });
+   
+
     $('#menu-toggle-close').click(function(){
       if( $('#site-header-menu').hasClass('open') ) {
         $('#site-header-menu').removeClass('open').css({'transform':'scale(0)','borderRadius':'100%'});

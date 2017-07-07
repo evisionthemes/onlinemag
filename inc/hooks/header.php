@@ -314,18 +314,22 @@ function onlinemag_navigation_page_start() {
                                   <a class="button-search button-outline" href="#">
                                     <i class="fa fa-search"></i>
                                   </a>
-                                  <div id="search-bg" class="search-bg">
+
+                                 <!--  <div id="search-bg" class="search-bg">
                                     <div class="form-holder">
                                     <div class="btn-search button-search-close" href="#"><i class="fa fa-close"></i></div>
                                         <?php get_search_form();?>
                                     </div>
-                                  </div>
+                                  </div> -->
                                 </div>
-                            </div>
+                            </div>                            
                         <?php } ?>
-                    </div>
+                    </div>                    
                 <?php } ?>                              
             </div>
+             <div class="search-form-nav" id="top-search">
+                                     <?php get_search_form();?>
+                                  </div>
         </div>
     </nav>
      <header class="wrapper top-header">

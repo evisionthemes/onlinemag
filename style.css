@@ -4604,7 +4604,7 @@ dd {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  text-align: right;
+  text-align: left;
   /*----------------------*/
 }
 @media screen and (max-width: 767px) {
@@ -6146,7 +6146,7 @@ img.desaturate {
 .search-holder .button-search i,
 .search-holder .button-search i:visited {
   font-size: 20px;
-  color: #fff;
+  color: #f60;
 }
 
 .search-holder .button-search:hover,
@@ -6539,6 +6539,7 @@ body.evision-no-sidebar #secondary {
   text-align: right;
   padding: 5px 15px;
   letter-spacing: 1px;
+  float: right;
 }
 
 .top-header {
@@ -6841,9 +6842,9 @@ body.evision-no-sidebar #secondary {
 
 .wrap-nav .wrap-inner .nav-buttons {
   float: right;
-  text-align: center;
+  text-align: right;
   width: 90px;
-  padding: 9px;
+  padding: 9px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -8556,11 +8557,25 @@ footer.entry-footer {
   min-height: 65px;
 }
 header.wrapper.top-header .controls {
-  padding: 0 12px 0 0;
   text-align: right;
   font-size: 24px;
   font-weight: 100;
+  background: #f60;
+  text-align: center;
+  width: 84px;
 }
-.social-widget.evision-social-section.social-icon-only.bottom-tooltip{
-    text-align: left;
+#top-search {
+  display: none;
+}
+form.search-form {
+    width: 32%;
+    float: right;
+    margin-top: 6px;
+}
+.nav-buttons.col-md-1 {
+    background: transparent;
+}
+a#slide-prev-notice,
+a#slide-next-notice {
+  color: #fff;
 }
