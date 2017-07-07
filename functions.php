@@ -41,8 +41,6 @@ function onlinemag_setup() {
 	add_theme_support( 'title-tag' );
 	add_image_size( 'onlinemag-main-slider', 765, 444, true );
 	add_image_size( 'onlinemag-right-slide', 375, 220, true );
-	add_image_size( 'onlinemag-carsol-slider', 261, 220, true );
-	add_image_size( 'onlinemag-style-one', 362, 335, true );
 	add_image_size( 'onlinemag-recent-sidebar', 83, 83, true );
 
 
