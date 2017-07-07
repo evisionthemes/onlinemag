@@ -7,7 +7,7 @@ Tags: blog, news, one-column, two-columns, left-sidebar, right-sidebar, custom-h
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.9
+Stable tag: 0.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -105,48 +105,5 @@ Note:
 
 == Changelog ==
 
-= - 1.0.9 - =
-* Slider effect added
-
-= - 1.0.8 - =
-* Link on archive image added
-* Minor design fix
-
-= - 1.0.7 - =
-* Top header style fix
-
-= - 1.0.6 - =
-* Minor Style Fixed
-
-= - 1.0.5 - =
-* Footer section updated
-* Update to pro button added
-
-= - 1.0.4 - =
-* Solved inner page banner image settings.
-
-= - 1.0.3 - =
-* Maintained the design and fixed some glitch.
-
-= - 1.0.2 - =
-* Fixed the sidebar issue.
-* Design maintained.
-
-= - 1.0.1 - =
-* Changed the screenshot.
-* Fixed the issue listed on theme review.
-
-= - 1.0.0 - =
-* Updated Slider and Widgets.
-
-= - 0.0.4 - =
-* Fixed the bug related to header image listed by reviwer.
-
-= - 0.0.3 - =
-* Upadated the image size
-
-= - 0.0.2 - =
-* Fixed the bug listed by reviewer.
-
-= - 0.0.1 - =
+= - 0.1.0 - =
 * Initial release.
