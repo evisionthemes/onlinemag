@@ -6576,7 +6576,7 @@ body.evision-no-sidebar #secondary {
 .top-header .noticebar .notice-title {  
   float: left;
   vertical-align: middle;
-  padding-right: 25px;
+  padding: 8px;
   text-align: center;
   margin-right: 15px; 
 }
@@ -8041,7 +8041,7 @@ aside#secondary h2 {
 article.post {
   width: 50%;
   float: left;
-  padding: 0 10px;
+  padding: 0 7px;
 }
 
 /* ==================================*/
@@ -8544,6 +8544,7 @@ a.category-more {
   border: 1px solid #dbdbdb;
   padding: 10px;
   background: #fff;
+  min-height: 552px;
 }
 .wrapper-grid:hover {   
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -8567,7 +8568,7 @@ header.wrapper.top-header .controls {
 #top-search {
   display: none;
 }
-form.search-form {
+#top-search form.search-form {
     width: 32%;
     float: right;
     margin-top: 6px;
