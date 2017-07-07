@@ -6537,7 +6537,7 @@ body.evision-no-sidebar #secondary {
 
 .timer {
   text-align: right;
-  padding: 5px 15px;
+  padding: 5px 30px;
   letter-spacing: 1px;
   float: right;
 }
@@ -7538,7 +7538,7 @@ body.evision-no-sidebar #secondary {
 }
 .wrapper-slider .slide-item img {
 /*  vertical-align: top;
-*/  opacity: 0.5;
+*/  opacity: 0.8;
 }
 .wrapper-slider .slide-item:not(:first-child) {
   display: none;
