@@ -12,6 +12,7 @@ global $onlinemag_customizer_all_values;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ <div class="wrapper-grid">
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) {
@@ -96,4 +97,5 @@ global $onlinemag_customizer_all_values;
 	<footer class="entry-footer">
 		<?php onlinemag_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	</div>
 </article><!-- #post-## -->
