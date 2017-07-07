@@ -5283,6 +5283,7 @@ article .comment-list, .pingback .comment-list
   background: #f0eded;
   padding: 5px 20px;
   height: 28px;
+  border-left: 3px solid #f60;
 }
 
 .widget .widgettitle:after, 
@@ -5328,8 +5329,8 @@ article .comment-list, .pingback .comment-list
 }
 
 .search-form .search-submit, .search-form .search-submit:visited {
-  background: #E64946;
-  border: none;
+/*  background: #E64946;
+*/  border: none;
   color: #fff;
   height: 44px;
   width: 100px;
@@ -5419,6 +5420,14 @@ article .comment-list, .pingback .comment-list
   box-shadow: 0 4px 8px 0 rgba(178, 178, 178, 0.13);
   padding: 0 0 10px 0;
   border: 1px solid #efefef;
+}
+
+.footer-widget ul a:before {
+  content: "\f054";
+  font-family: fontAwesome;
+  padding-right: 7px;
+  color: #fff;
+  font-weight: 100;
 }
 
 .thumb-post .overlay-post-content {
@@ -5885,9 +5894,9 @@ img.desaturate {
 }
 
 .carousel-group {
-  text-align: center;
-  font-size: 15.008px;
-  font-size: 0.938rem;
+  text-align: left;
+  font-size: 16px;
+  /*font-size: 0.938rem;*/
 }
 .carousel-group h3 {
   margin-top: 15px;
@@ -6056,7 +6065,7 @@ img.desaturate {
 }
 
 .thumb-post.second {
-  width: 112%;
+  width: 110%;
 }
 
 .thumb-post.second .entry-title{
@@ -6068,8 +6077,8 @@ img.desaturate {
 
 .thumb-post .entry-title {
   margin-top: 5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  /*font-size: 1.125rem;*/
 }
 .thumb-post img {
   vertical-align: top;
@@ -7525,8 +7534,8 @@ body.evision-no-sidebar #secondary {
   width: 100%;
 }
 .wrapper-slider .slide-item img {
-  vertical-align: top;
-  opacity: 0.5;
+/*  vertical-align: top;
+*/  opacity: 0.5;
 }
 .wrapper-slider .slide-item:not(:first-child) {
   display: none;
@@ -7694,7 +7703,7 @@ body.evision-no-sidebar #secondary {
   margin-top: 30px;
 }
 .wrap-below-banner .thumb-post .overlay-post-content .post-icons {
-  text-align: center;
+  text-align: left;
 }
 
 .wrap-below-banner .slick-prev {
@@ -8275,6 +8284,7 @@ aside#secondary h2 {
   font-size: 0.875rem;
   font-size: 13.008px;
   font-size: 0.813rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -8341,6 +8351,25 @@ div#page {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
 }
+
+.thumb-post.second .overlay-post-content {
+  display: none;    
+}
+
+.thumb-post.second:hover .overlay-post-content{
+  display: initial;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  background: rgba(0, 0, 0, 0.61);
+  top: 0;
+  text-align: center;
+}
+
+.thumb-post.second .post-icons{
+  text-align: center;
+}
+
 .main-navigation.sec-main-navigation ul ul ul{
   display: none;
 }
