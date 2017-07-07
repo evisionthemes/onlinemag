@@ -23,13 +23,71 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
         <section class="wrapper wrap-below-banner">
             <div class="container">
                 <div class="category-grid">
-                    <div class="card col-md-3">
-                      <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
-                      <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
+                    <div class="col-md-4">
+                        <div class="card ">
+                        <h3>Travell</h3>
+                          <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
+                          <div class="card-block">
+                            <h4 class="card-title"><a href="#">News with description</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
+                          </div>
+                          <div class="category-link">
+                          <a href="#" class="category-more">view more </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card ">
+                        <h3>Photography</h3>
+                          <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
+                          <div class="card-block">
+                            <h4 class="card-title"><a href="#">News with description</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                   
+                          </div>
+                           <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
+                          </div>
+                           <div class="category-link">
+                          <a href="#" class="category-more">view more </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <h3>Sports</h3>
+                              <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title"><a href="#">News with description</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
+                              </div>
+                               <div class="card-block">
+                                <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
+                              </div>
+                               <div class="card-block">
+                                <h4 class="card-title"><a href="#">News title only</a></h4>                                                   
+                              </div>
+                            <div class="card-block">
+                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
+                          </div>
+                           <div class="category-link">
+                          <a href="#" class="category-more">view more </a>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
