@@ -6576,7 +6576,7 @@ body.evision-no-sidebar #secondary {
 .top-header .noticebar .notice-title {  
   float: left;
   vertical-align: middle;
-  padding-right: 25px;
+  padding: 8px;
   text-align: center;
   margin-right: 15px; 
 }
@@ -8567,7 +8567,7 @@ header.wrapper.top-header .controls {
 #top-search {
   display: none;
 }
-form.search-form {
+#top-search form.search-form {
     width: 32%;
     float: right;
     margin-top: 6px;
