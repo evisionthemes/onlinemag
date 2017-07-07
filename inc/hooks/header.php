@@ -304,7 +304,27 @@ function onlinemag_navigation_page_start() {
                             </div>
                         </div><!-- site-header-menu -->
                     </div>
-                </div>              
+                </div> 
+                 <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
+                    <div class="nav-buttons col-md-1">                        
+                        
+                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
+                            <div class="button-list">
+                                <div class="search-holder">
+                                  <a class="button-search button-outline" href="#">
+                                    <i class="fa fa-search"></i>
+                                  </a>
+                                  <div id="search-bg" class="search-bg">
+                                    <div class="form-holder">
+                                    <div class="btn-search button-search-close" href="#"><i class="fa fa-close"></i></div>
+                                        <?php get_search_form();?>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+                <?php } ?>                              
             </div>
         </div>
     </nav>
@@ -329,6 +349,8 @@ function onlinemag_navigation_page_start() {
                                         data-cycle-carousel-visible=5
                                         data-cycle-pause-on-hover=true
                                         data-cycle-auto-height=container
+                                        data-cycle-prev=#slide-prev-notice
+                                        data-cycle-next=#slide-next-notice 
                                         data-cycle-slides="> div">
                                             <?php $onlinemag_tinker_args = array(
                                                 'post_type' => 'post',
@@ -352,27 +374,11 @@ function onlinemag_navigation_page_start() {
                                 </div>
                             </div>                            
                         <?php } ?>                        
-                    </div> 
-                      <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
-                    <div class="nav-buttons col-md-1">                        
-                        
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
-                            <div class="button-list">
-                                <div class="search-holder">
-                                  <a class="button-search button-outline" href="#">
-                                    <i class="fa fa-search"></i>
-                                  </a>
-                                  <div id="search-bg" class="search-bg">
-                                    <div class="form-holder">
-                                    <div class="btn-search button-search-close" href="#"><i class="fa fa-close"></i></div>
-                                        <?php get_search_form();?>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>                 
+                    </div>   
+                     <div class="controls col-md-1">
+                        <a href="#" id="slide-prev-notice"><i class="fa fa-angle-left"></i></a>
+                        <a href="#" id="slide-next-notice"><i class="fa fa-angle-right"></i></a>
+                  </div>                   
                 </div>
             </div>
         </div>

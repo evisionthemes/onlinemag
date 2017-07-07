@@ -6842,7 +6842,8 @@ body.evision-no-sidebar #secondary {
 .wrap-nav .wrap-inner .nav-buttons {
   float: right;
   text-align: center;
-  width: 155px;
+  width: 90px;
+  padding: 9px;
 }
 
 @media screen and (min-width: 768px) {
@@ -6991,7 +6992,7 @@ body.evision-no-sidebar #secondary {
   font-size: 0.875rem;
   line-height: 1.3125;
   outline-offset: -1px;
-  padding: 17px;
+  padding: 19px 27px 0 0;
   text-transform: uppercase;
 }
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active,
@@ -7447,12 +7448,6 @@ body.evision-no-sidebar #secondary {
     text-align: center;
   }
 }
-.nav-buttons {   
-    width: 80px;
-    text-align: center;
-    height: 32px;
-}
-
 .nav-buttons .button-list {
   display: inline-block;
 }
@@ -8377,12 +8372,6 @@ div#page {
   -moz-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   background: rgba(0, 0, 0, 0.61);
-  top: 0;
-  text-align: center;
-}
-
-.thumb-post.second .post-icons{
-  text-align: center;
 }
 
 .main-navigation.sec-main-navigation ul ul ul{
@@ -8560,9 +8549,18 @@ a.category-more {
 }
 
 .wrapper-grid h2 {
-    min-height: 50px;
+  min-height: 50px;
 }
 
 footer.entry-footer {
-    min-height: 65px;
+  min-height: 65px;
+}
+header.wrapper.top-header .controls {
+  padding: 0 12px 0 0;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 100;
+}
+.social-widget.evision-social-section.social-icon-only.bottom-tooltip{
+    text-align: left;
 }
