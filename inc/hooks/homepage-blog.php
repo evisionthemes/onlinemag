@@ -11,84 +11,78 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
      */
     function onlinemag_home_blog() {
         global $onlinemag_customizer_all_values;
-        
-        $onlinemag_home_blog_category = esc_attr($onlinemag_customizer_all_values['onlinemag-blog-category']);
-        $onlinemag_home_blog_number = absint($onlinemag_customizer_all_values['onlinemag-blog-number']);
         if( 1 != $onlinemag_customizer_all_values['onlinemag-blog-enable'] ){
             return null;
         }
+        $repeated_category = array('onlinemag-blog-category-ids');
+        $onlinemag_blog_category = evision_customizer_get_repeated_all_value(3 , $repeated_category);
+        $onlinemag_blog_cat_posts_ids=array();
+        foreach( $onlinemag_blog_category as $onlinemag_blog_cat_post ) {
+            if( 0 != $onlinemag_blog_cat_post['onlinemag-blog-category-ids'] ){
+                $onlinemag_blog_cat_posts_ids[] = $onlinemag_blog_cat_post['onlinemag-blog-category-ids'];
+            }
+        }
+        $onlinemag_home_blog_args = array();
+        if( !empty( $onlinemag_blog_cat_posts_ids) ){
+            $onlinemag_home_blog_args = array(
+                'post_type' => 'post',
+                'cat' => $onlinemag_blog_cat_posts_ids,
+                'ignore_sticky_posts' => true,
+                'posts_per_page' => 4,
+            );
+        } ?>
+        <?php 
+/*        $cat_name_1 = get_cat_name( $onlinemag_blog_cat_posts_ids[1]);
+        echo $cat_name_1;*/
         ?>
-
-        <!-- carrousel slider section -->
         <section class="wrapper wrap-below-banner">
             <div class="container">
                 <div class="category-grid">
-                    <div class="col-md-4">
-                        <div class="card ">
-                        <h3>Travell</h3>
-                          <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title"><a href="#">News with description</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
-                          </div>
-                          <div class="category-link">
-                          <a href="#" class="category-more">view more </a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card ">
-                        <h3>Photography</h3>
-                          <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title"><a href="#">News with description</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                   
-                          </div>
-                           <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
-                          </div>
-                           <div class="category-link">
-                          <a href="#" class="category-more">view more </a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card ">
-                            <h3>Sports</h3>
-                              <img class="card-img-top" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/images/feature-post.jpg" alt="Card image cap">
-                              <div class="card-block">
-                                <h4 class="card-title"><a href="#">News with description</a></h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
-                              </div>
-                               <div class="card-block">
-                                <h4 class="card-title"><a href="#">News title only</a></h4>                                                     
-                              </div>
-                               <div class="card-block">
-                                <h4 class="card-title"><a href="#">News title only</a></h4>                                                   
-                              </div>
+                <?php for ($j=0; $j < count($onlinemag_blog_cat_posts_ids) ; $j++) {
+                  $onlinemag_category = get_cat_name( $onlinemag_blog_cat_posts_ids[$j]); ?>
+                  <div class="col-md-4">
+                      <div class="card ">
+                      <h3><?php echo esc_attr($onlinemag_category); ?></h3>
+
+                      <?php 
+                      $onlinemag_logs_args = array(
+                          'post_type' => 'post',
+                          'cat' => $onlinemag_blog_cat_posts_ids,
+                          'ignore_sticky_posts' => true,
+                          'posts_per_page' => 4,
+                      );
+                      $i = 1;
+                      $onlinemag_blogs_post_query = new WP_Query($onlinemag_logs_args);
+                      if ($onlinemag_blogs_post_query->have_posts()) :
+                          $data_delay = 0;
+                          while ($onlinemag_blogs_post_query->have_posts()) : $onlinemag_blogs_post_query->the_post(); 
+                          if ($i == 1) { ?>
+                            <div class="card-img-top">
+                              <?php the_post_thumbnail(); ?>
+                            </div>
                             <div class="card-block">
-                            <h4 class="card-title"><a href="#">News title only</a></h4>                                                
-                          </div>
-                           <div class="category-link">
-                          <a href="#" class="category-more">view more </a>
-                          </div>
+                              <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                              <?php 
+                              $onlinemag_blog_single_words = 20;
+                              $onlinemag_blog_content = onlinemag_words_count( $onlinemag_blog_single_words ,get_the_content());
+                              ?>
+                              <p class="card-text"><?php echo wp_kses_post($onlinemag_blog_content); ?></p>                            
+                            </div>
+                           <?php $i++; } else {?>
+                             <div class="card-block">
+                                <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                              </div>
+                           <?php }  ?>
+                               <?php endwhile;
+                           wp_reset_postdata();
+                           endif;
+                            ?>
+                        <div class="category-link">
+                        <a href="<?php echo esc_url(get_category_link(  $onlinemag_blog_cat_posts_ids[$j] )); ?> " class="category-more"><?php echo esc_html__( 'View More', 'onlinemag' ); ?></a>
                         </div>
-                    </div>
+                      </div>
+                  </div>
+                <?php } ?>
                 </div>
             </div>
         </section>

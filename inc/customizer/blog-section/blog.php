@@ -7,7 +7,6 @@ global $onlinemag_customizer_defaults;
 
 /*defaults values*/
 $onlinemag_customizer_defaults['onlinemag-blog-enable'] = 1;
-$onlinemag_customizer_defaults['onlinemag-blog-number'] = 4;
 $onlinemag_customizer_defaults['onlinemag-blog-category'] = 1;
 
 /*aboutoptions*/
@@ -23,7 +22,7 @@ $onlinemag_settings_controls['onlinemag-blog-enable'] =
             'default'              => $onlinemag_customizer_defaults['onlinemag-blog-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Blog', 'onlinemag' ),
+            'label'                 =>  __( 'Enable Blog Section', 'onlinemag' ),
             'section'               => 'onlinemag-blog-options',
             'type'                  => 'checkbox',
             'priority'              => 10,
@@ -31,39 +30,32 @@ $onlinemag_settings_controls['onlinemag-blog-enable'] =
         )
     );
 
-$onlinemag_settings_controls['onlinemag-blog-number'] =
-    array(
-        'setting' =>     array(
-            'default'              => $onlinemag_customizer_defaults['onlinemag-blog-number']
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Number Of Blog/s', 'onlinemag' ),
-            'description'           =>  __( 'Remember that featured post will not be counted', 'onlinemag' ),
-            'section'               => 'onlinemag-blog-options',
-            'type'                  => 'select',
-            'choices'               => array(
-                1 => __( '1', 'onlinemag' ),
-                2 => __( '2', 'onlinemag' ),
-                3 => __( '3', 'onlinemag' ),
-                4 => __( '4', 'onlinemag' )
-            ),
-            'priority'              => 40,
-            'active_callback'       => ''
-        )
-    );
 
 /*creating setting control for onlinemag-fs-Category start*/
-$onlinemag_settings_controls['onlinemag-blog-category'] =
-    array(
-        'setting' =>     array(
-            'default'              => $onlinemag_customizer_defaults['onlinemag-blog-category']
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Select Category For Blog', 'onlinemag' ),
-            'description'           =>  __( 'Blog will only displayed from this category', 'onlinemag' ),
-            'section'               => 'onlinemag-blog-options',
-            'type'                  => 'category_dropdown',
-            'priority'              => 70,
-            'active_callback'       => ''
-        )
-    );
+
+    $onlinemag_repeated_settings_controls['onlinemag-blog-category'] =
+        array(
+            'repeated' => 3,
+            'onlinemag-blog-category-ids' => array(
+                'setting' =>     array(
+                    'default'              => $onlinemag_customizer_defaults['onlinemag-blog-category'],
+
+                ),
+                'control' => array(
+                    'label'                 =>  __( 'Select Category For Blog %s', 'onlinemag' ),
+                    'description'           =>  __( 'Selected category will displayed below the slider', 'onlinemag' ),
+                    'section'               => 'onlinemag-blog-options',
+                    'type'                  => 'category_dropdown',
+                    'priority'              => 60,
+                    'active_callback'       => ''
+                )
+            ),
+            'onlinemag-blog-category-divider' => array(
+                'control' => array(
+                    'section'               => 'onlinemag-blog-options',
+                    'type'                  => 'message',
+                    'priority'              => 20,
+                    'description'           => '<br /><hr />'
+                )
+            )
+        );
