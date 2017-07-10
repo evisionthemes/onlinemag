@@ -24,12 +24,13 @@ $onlinemag_google_fonts = array(
     'Ubuntu:400,400italic,500,700' => 'Ubuntu',
     'Varela+Round' => 'Varela Round',
     'Yanone+Kaffeesatz:400,300,700' => 'Yanone Kaffeesatz',
+    'Raleway:100,100italic,400,700' => 'Raleway',
 );
 
 /*defaults values*/
-$onlinemag_customizer_defaults['onlinemag-font-family-Primary'] = 'Oxygen:400,300,700';
-$onlinemag_customizer_defaults['onlinemag-font-family-site-identity'] = 'Merriweather:400,400italic,300,900,700';
-$onlinemag_customizer_defaults['onlinemag-font-family-title'] = 'Merriweather:400,400italic,300,900,700';
+$onlinemag_customizer_defaults['onlinemag-font-family-Primary'] = 'Lato:400,300,400italic,900,700';
+$onlinemag_customizer_defaults['onlinemag-font-family-site-identity'] = 'Raleway:100,100italic,400,700';
+$onlinemag_customizer_defaults['onlinemag-font-family-title'] = 'Raleway:100,100italic,400,700';
 
 
 /*section*/

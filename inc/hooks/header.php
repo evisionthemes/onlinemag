@@ -313,30 +313,23 @@ function onlinemag_navigation_page_start() {
                                 <div class="search-holder">
                                   <a class="button-search button-outline" href="#">
                                     <i class="fa fa-search"></i>
-                                  </a>
-
-                                 <!--  <div id="search-bg" class="search-bg">
-                                    <div class="form-holder">
-                                    <div class="btn-search button-search-close" href="#"><i class="fa fa-close"></i></div>
-                                        <?php get_search_form();?>
-                                    </div>
-                                  </div> -->
+                                  </a>                                
                                 </div>
                             </div>                            
                         <?php } ?>
                     </div>                    
                 <?php } ?>                              
             </div>
-             <div class="search-form-nav" id="top-search">
-                                     <?php get_search_form();?>
-                                  </div>
+            <div class="search-form-nav" id="top-search">
+                <?php get_search_form();?>
+            </div>
         </div>
     </nav>
      <header class="wrapper top-header">
         <div class="container">
             <div class="wrap-inner">
                 <div class="row">
-                    <div class="col-xs-11 col-sm-11 col-md-11 top-header-left">
+                    <div class="col-xs-10 col-sm-1 col-md-11 top-header-left">
                         <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-tinker']) { ?>
                             <div class="noticebar">
                                 <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>

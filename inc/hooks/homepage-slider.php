@@ -32,7 +32,7 @@ if ( ! function_exists( 'onlinemag_featured_home_slider' ) ) :
                 <div class="col-xs-12 col-sm-12 col-md-6 pad0r left-content">
                     <div class="wrapper-slider">
                         <?php if (1 == $onlinemag_feature_enable_arrow) { ?>
-                            <div class="controls">
+                            <div class="slider-controls">
                                 <a href="#" id="slide-prev"><i class="fa fa-angle-left"></i></a>
                                 <a href="#" id="slide-next"><i class="fa fa-angle-right"></i></a>
                             </div>
