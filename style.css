@@ -6993,7 +6993,7 @@ body.evision-no-sidebar #secondary {
   font-size: 0.875rem;
   line-height: 1.3125;
   outline-offset: -1px;
-  padding: 19px 27px 0 0;
+  padding: 19px 27px 19px 0;
   text-transform: uppercase;
 }
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active,
@@ -8583,4 +8583,17 @@ a#slide-next-notice {
 
 div {
     outline:none;
+}
+
+/* responsive */
+@media screen and (max-width:768px) {
+  .wrap-nav .wrap-inner {
+    background: #000;
+}
+a.button-search.button-outline{
+  padding-right: 18px;
+}
+#top-search form.search-form {
+    width: 80%;
+  }
 }
