@@ -5626,6 +5626,8 @@ article .comment-list,
   padding: 9px 20px;
   height: 36px;
   border-left: 3px solid #f60;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .widget .widgettitle:after,
@@ -6589,6 +6591,7 @@ img.desaturate {
   background-color: #f60;
   border-color: #ff6600;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 .search-holder {
@@ -9354,7 +9357,13 @@ button:active {
 
 .card h3 {
   border-bottom: 1px solid #f60;
-  padding:0 0 6px 0 ;  
+  padding: 0 0 6px 0;
+  color: #000;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;    
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .card-block {
