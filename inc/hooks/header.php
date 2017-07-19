@@ -287,7 +287,7 @@ function onlinemag_navigation_page_start() {
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12">
-                                        <button id="mobile-menu-toggle-close" class="menu-toggle" aria-controls="secondary-menu"><span class="fa fa-close fa-2x"></span></button>
+                                        <button id="mobile-menu-toggle-close" class="menu-toggle" aria-controls="secondary-menu"><span class="fa fa-close"></span></button>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <nav id="sec-site-navigation-mobile" class="main-navigation sec-main-navigation" role="navigation" aria-label="secondary-menu">

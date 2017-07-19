@@ -21,18 +21,18 @@ jQuery(document).ready(function ($) {
 
     $('#menu-toggle-close').click(function(){
       if( $('#site-header-menu').hasClass('open') ) {
-        $('#site-header-menu').removeClass('open').css({'transform':'scale(0)','borderRadius':'100%'});
+        $('#site-header-menu').removeClass('open').css({'transform':'scale(0)'});
       }
 
     });
 
 // left menu
     $('#sec-menu-toggle').click(function(){
-        $( '#sec-site-header-menu' ).addClass('open').css({'transform':'scale(1)','borderRadius':'0'});
+        $( '#sec-site-header-menu' ).addClass('open').css({'transform':'scale(1)'});
     });
     $('#mobile-menu-toggle-close').click(function(){
       if( $('#sec-site-header-menu').hasClass('open') ) {
-          $( '#sec-site-header-menu' ).removeClass('open').css({'transform':'scale(0)','borderRadius':'100%'});
+          $( '#sec-site-header-menu' ).removeClass('open').css({'transform':'scale(0)'});
         }
   });
  /**
@@ -108,9 +108,19 @@ jQuery(document).ready(function ($) {
          // instead of a settings object
        ]
     });
+    // add class to odd and even categories
+    $('span.cat-links a:odd').addClass("odd-icon")
+    $('span.cat-links a:even').addClass("even-icon")
+    // add class to odd and even tag links
+    $('span.tags-links a:odd').addClass("tag-odd")
+    $('span.tags-links a:even').addClass("tag-even")
 
-    // back to top animation
+    // add class to odd and even tagcloud
+    $('.tagcloud a:odd').addClass("odd-tagcloud")
+    $('.tagcloud a:even').addClass("even-tagcloud")
+    $('.category-link a:even').addClass("odd-cat")
 
+    // back to top animation 
     $('#gotop').click(function(){
       $('body').animate({scrollTop: '0px'},1000);
     });
@@ -137,6 +147,10 @@ jQuery(document).ready(function ($) {
               }
              
             } 
+          });
+          // add toggle class to search icon
+          $("a.button-search.button-outline").click(function () {
+           $("i.fa.fa-search").toggleClass("fa-close");   
           });
 
       // back to top animation
