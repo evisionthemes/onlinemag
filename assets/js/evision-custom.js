@@ -14,7 +14,6 @@ jQuery(document).ready(function ($) {
 
   //hide and show search 
          $(".nav-buttons").click(function(){
-          console.log('helloworld');
              $("#top-search").slideToggle("400");
           });
    
