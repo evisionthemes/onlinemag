@@ -8,7 +8,24 @@
  */
 
 get_header(); ?>
-
+<?php if (is_archive()) { ?>
+	<div class="wrapper page-inner-title">
+		<div class="container">
+		    <div class="row">
+		        <div class="col-md-12 col-sm-12 col-xs-12">
+					<header class="entry-header">
+						<div class="inner-banner-overlay">
+							<?php 
+							the_archive_title( '<h1 class="entry-title">', '</h1>' );
+							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+							?>
+						</div>
+					</header><!-- .entry-header -->
+		        </div>
+		    </div>
+		</div>
+	</div>
+<?php } ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
