@@ -18,15 +18,6 @@ global $onlinemag_customizer_all_values;
 					<header class="entry-header">
 						<div class="inner-banner-overlay">
 							<?php 
-							/**
-							 * onlinemag_action_after_title hook
-							 * @since onlinemag 1.0.0
-							 *
-							 * @hooked null
-							 */
-							do_action( 'onlinemag_action_after_title' );
-							?>
-							<?php 
 							the_archive_title( '<h1 class="entry-title">', '</h1>' );
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>

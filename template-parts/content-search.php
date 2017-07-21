@@ -14,15 +14,6 @@
 	        <div class="col-md-12 col-sm-12 col-xs-12">
 				<header class="entry-header">
 					<div class="inner-banner-overlay">
-						<?php 
-						/**
-						 * onlinemag_action_after_title hook
-						 * @since onlinemag 1.0.0
-						 *
-						 * @hooked null
-						 */
-						do_action( 'onlinemag_action_after_title' );
-						?>
 						<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'onlinemag' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</div>
 				</header><!-- .entry-header -->

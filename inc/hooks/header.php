@@ -401,6 +401,14 @@ if( ! function_exists( 'onlinemag_main_slider_setion' ) ) :
     function onlinemag_main_slider_setion(){
         if (  is_front_page() && !is_home() ) {
             do_action('onlinemag_action_main_slider');
+        } else {
+            /**
+             * onlinemag_action_after_title hook
+             * @since onlinemag 1.0.0
+             *
+             * @hooked null
+             */
+            do_action( 'onlinemag_action_after_title' );
         }
     }
 endif;

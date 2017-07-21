@@ -14,15 +14,6 @@
 	        <div class="col-md-12 col-sm-12 col-xs-12">
 				<header class="entry-header">
 					<div class="inner-banner-overlay">
-						<?php 
-						/**
-						 * onlinemag_action_after_title hook
-						 * @since onlinemag 1.0.0
-						 *
-						 * @hooked null
-						 */
-						do_action( 'onlinemag_action_after_title' );
-						?>
 						<?php if (is_singular()){ ?>
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 						<?php if (! is_page() ){?>
