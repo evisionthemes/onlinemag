@@ -40,10 +40,12 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                 <div class="category-grid">
                 <?php for ($j=0; $j < count($onlinemag_blog_cat_posts_ids) ; $j++) {
                   $onlinemag_category = get_cat_name( $onlinemag_blog_cat_posts_ids[$j]); ?>
+                  <?php $onlinemag_cat_link = get_category_link( $onlinemag_blog_cat_posts_ids[$j]); ?> 
                   <div class="col-md-4">
                       <div class="card ">
-                      <p class="card-title"><?php echo esc_attr($onlinemag_category); ?></p>
-
+                      <a href="<?php echo esc_url($onlinemag_cat_link); ?>">
+                        <p class="card-title"><?php echo esc_attr($onlinemag_category); ?></p>
+                      </a>
                       <?php 
                       $onlinemag_logs_args = array(
                           'post_type' => 'post',
@@ -57,9 +59,12 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                           $data_delay = 0;
                           while ($onlinemag_blogs_post_query->have_posts()) : $onlinemag_blogs_post_query->the_post(); 
                           if ($i == 1) { ?>
-                            <div class="card-img-top">
-                              <?php the_post_thumbnail(); ?>
-                            </div>
+                            <a href="<?php the_permalink(); ?>">
+                              <div class="card-img-top">
+                                <?php the_post_thumbnail(); ?>
+                                <div class="img-overlay"></div>
+                              </div>
+                            </a>
                             <div class="card-block">
                               <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                               <?php 
