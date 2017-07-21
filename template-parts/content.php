@@ -10,24 +10,6 @@
 global $onlinemag_customizer_all_values;
 
 ?>
-<?php if (is_archive()) { ?>
-	<div class="wrapper page-inner-title">
-		<div class="container">
-		    <div class="row">
-		        <div class="col-md-12 col-sm-12 col-xs-12">
-					<header class="entry-header">
-						<div class="inner-banner-overlay">
-							<?php 
-							the_archive_title( '<h1 class="entry-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
-							?>
-						</div>
-					</header><!-- .entry-header -->
-		        </div>
-		    </div>
-		</div>
-	</div>
-<?php } ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  <div class="wrapper-grid">
 	<header class="entry-header">
