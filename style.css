@@ -1304,6 +1304,10 @@ dt {
 
 .fa-search:before {
   content: "\f002";
+  font-size: 20px;
+}
+span.fa.fa-bars {
+  font-size: 23px;
 }
 
 .fa-envelope-o:before {
@@ -7204,10 +7208,9 @@ span.notice-title:before {
 
 @media screen and (max-width: 767px) {
   .top-header .noticebar .ticker {
-    height: auto;
-    padding-left: 15px;
-    padding-right: 0;
-    margin-bottom: 0;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 0;
   }
 }
 
@@ -7510,7 +7513,7 @@ span.notice-title:before {
 
 .nav-holder #sec-menu-toggle {
   float: left;
-  padding: 21px 16px;
+  padding: 17px 16px;
 }
 
 .nav-holder .go-right {
@@ -9590,12 +9593,6 @@ header.wrapper.top-header .controls {
   display: none;
 }
 
-#top-search form.search-form {
-  width: 32%;
-  float: right;
-  margin: 6px 0;
-}
-
 .nav-buttons.col-md-1 {
   background: transparent;
 }
@@ -9894,4 +9891,16 @@ p.card-title::first-letter {
   color: #ff6600;
   font-weight: bold;
   font-size: 25px;
+}
+#top-search {
+    padding-top: 3px;
+    display: none;
+    z-index: 99999;
+    position: absolute;
+    right: 8%;
+    margin-top: 17px;
+}
+#top-search .search-form .search-submit,
+#top-search .search-form .search-field{
+  height: 42px;
 }
