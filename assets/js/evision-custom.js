@@ -44,14 +44,7 @@ $('h2.widget-title').html(function() {
     });
   });
 });
-$('h1.widget-title').html(function() {
-  return this.innerText.split(' ').map(function(e, i) {
-    return $('<span />', {
-      class: 'i' + i,
-      text: e
-    });
-  });
-});
+
 
  /**
  * sub menu script

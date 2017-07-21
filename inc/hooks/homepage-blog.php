@@ -42,7 +42,7 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                   $onlinemag_category = get_cat_name( $onlinemag_blog_cat_posts_ids[$j]); ?>
                   <div class="col-md-4">
                       <div class="card ">
-                      <h3><?php echo esc_attr($onlinemag_category); ?></h3>
+                      <p class="card-title"><?php echo esc_attr($onlinemag_category); ?></p>
 
                       <?php 
                       $onlinemag_logs_args = array(

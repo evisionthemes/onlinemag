@@ -1049,6 +1049,9 @@ dt {
   opacity: 0.8;
   padding-left: 22px;
 }
+.main-panel-section .widget_recent_entries .post-date{
+  padding-left: 0;
+}
 
 .widget_recent_entries .post-date:before {
   content: "\f133";
@@ -5268,7 +5271,7 @@ dd {
   bottom: -100px;
   color: #fff;
   display: inline-block;
-  padding: 4px 14px 6px;
+  padding: 4px 15px 4px 15px;
   position: fixed;
   right: 20px;
   z-index: 99999;
@@ -6416,6 +6419,7 @@ img.desaturate {
   background-color: transparent;
   position: relative;
   margin-bottom: 25px;
+  margin-top: -16px;
 }
 
 .page-inner-title .thumb-overlay {
@@ -6429,10 +6433,7 @@ img.desaturate {
 }
 
 .page-inner-title .entry-header .entry-title {
-  color: #151515;
-  /*padding-left: 15px;
-  padding-right: 15px;*/
-  text-transform: uppercase;
+  color: #151515;  
 }
 
 .page-inner-title .taxonomy-description,
@@ -6890,8 +6891,11 @@ aside#secondary .post-icons span:not(:first-child) {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  padding: 0 16px 15px;
+  padding: 0 24px 0 24px;
   width: 100%;
+}
+body.home .site-content {
+  padding: 0 14px 0 11px;
 }
 
 .site-content:before,
@@ -6957,10 +6961,13 @@ body.home.blog .site-content {
 #primary {
   /*right*/
   width: 70%;
-  padding-left: 15px;
-  padding-right: 5%;
+  padding-left: 0;
+  padding-right: 2%;
   /*left*/
   /*none*/
+}
+body.evision-no-sidebar #primary{
+  padding-right: 0;
 }
 body.home.blog div#content {
     padding: 0 27px 0 5px;
@@ -7119,7 +7126,7 @@ header.wrapper.top-header .container {
 .top-header .noticebar .notice-title {
   float: left;
   vertical-align: middle;
-  padding: 8px;
+  padding: 8px 16px;
   text-align: center;
   margin-right: 15px;
 }
@@ -7272,7 +7279,7 @@ span.notice-title:before {
 }
 
 .site-header .wrapper-site-identity .site-title a:hover {
-  color: #d1661f;
+  color: #ff6600;
   opacity: 0.7;
 }
 
@@ -9179,10 +9186,10 @@ h1.widget-title:after {
 /* ==================================*/
 
 .wrap-breadcrumb {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 14px;
   text-align: left;
-  padding: 0 10px;
+  padding: 0 4px;
 }
 div#breadcrumb .container {
   padding: 0;
@@ -9450,7 +9457,7 @@ p.card-text {
   text-align: justify;
 }
 
-.card h3{
+.card p.card-title{
   border-bottom: 2px solid #2f2f2f;
   padding: 0 0 6px 0;
   color: #2f2f2f;
@@ -9459,6 +9466,7 @@ p.card-text {
   letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .card h4 {
   color: #2f2f2f;
@@ -9477,6 +9485,20 @@ p.card-text {
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.card:hover .card-title {
+    color: #f60;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .category-link {
@@ -9485,15 +9507,19 @@ p.card-text {
 }
 
 a.category-more {
-  padding: 6px;
+  padding: 9px 19px;
   border: 1px solid;
   background: #ff6600;
   color: #fff;
+  font-size: 14px;
 }
 
 a.category-more.odd-cat:hover,
 a.category-more:hover  {
- box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+  letter-spacing: 1px;
+  background: rgba(247, 247, 247, 0);
+  border: 1px solid #f60;
+  color: #000;
 }
 
 a.category-more.odd-cat {
@@ -9526,6 +9552,7 @@ header.wrapper.top-header .controls {
   background: #f60;
   text-align: center;
   float: right;
+  width: 57px;
 }
 
 #top-search {
@@ -9629,7 +9656,19 @@ span.i1 {
     padding-left: 8px;
     font-weight: 100;
     color: #ff6600;
-    padding-right: 8px;
+    padding-right: 4px;
+}
+
+span.i4 {
+  padding: 0 4px;
+  color: #ff6600;
+}
+span.i2,span.i3,span.i5,span.i6,span.i7,span.i8,span.i9,span.i10,span.i11,span.i12,span.i13{
+  padding: 0 4px;
+}
+section.wrapper.footer-widget .widget_recent_entries .post-date {
+    padding: 0 15px;
+    color: #fff;
 }
 /* tag clouds */
 
@@ -9790,4 +9829,10 @@ span.edit-link:before {
   .category-grid {
     display: initial;
   }
+}
+.site-title::first-letter {
+  color: #ff6600;
+}
+p.card-title::first-letter{
+  color: #ff6600;
 }
