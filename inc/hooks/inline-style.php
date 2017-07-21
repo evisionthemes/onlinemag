@@ -21,7 +21,6 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
         $onlinemag_font_family_site_identity_option = $onlinemag_google_fonts[$onlinemag_customizer_all_values['onlinemag-font-family-site-identity']];
         $onlinemag_font_family_title_option = $onlinemag_google_fonts[$onlinemag_customizer_all_values['onlinemag-font-family-title']];
         /*end of about section*/
-        $onlinemag_banner_image = $onlinemag_customizer_all_values['onlinemag-default-banner-image'];
         ?>
         <style type="text/css">
         /*=====COLOR OPTION=====*/

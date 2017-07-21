@@ -5,7 +5,6 @@ global $onlinemag_repeated_settings_controls;
 global $onlinemag_customizer_defaults;
 
 /*defaults values*/
-$onlinemag_customizer_defaults['onlinemag-default-banner-image'] = '';
 $onlinemag_customizer_defaults['onlinemag-default-layout'] = 'right-sidebar';
 $onlinemag_customizer_defaults['onlinemag-single-post-image-align'] = 'full';
 $onlinemag_customizer_defaults['onlinemag-excerpt-length'] = '50';
@@ -20,20 +19,6 @@ $onlinemag_sections['onlinemag-layout-options'] =
     );
 
 /*layout-options option responsive lodader start*/
-/*creating setting control for onlinemag-layout-options start*/
-$onlinemag_settings_controls['onlinemag-default-banner-image'] =
-    array(
-        'setting' =>     array(
-            'default'              => $onlinemag_customizer_defaults['onlinemag-default-banner-image'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Default Banner Image', 'onlinemag' ),
-            'description'           =>  __( 'Please note that if you remove this image default banner image will appear', 'onlinemag' ),
-            'section'               => 'onlinemag-layout-options',
-            'type'                  => 'image',
-            'priority'              => 20,
-        )
-    );
 
 $onlinemag_settings_controls['onlinemag-default-layout'] =
     array(
