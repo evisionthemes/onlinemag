@@ -37,8 +37,6 @@ require get_template_directory().'/inc/function/single-image-align.php';
 
 require get_template_directory() . '/inc/function/header-logo.php';
 
-require get_template_directory() . '/inc/function/inner-head.php';
-
 require get_template_directory() . '/inc/hooks/header.php';
 
 require get_template_directory() . '/inc/hooks/footer.php';
