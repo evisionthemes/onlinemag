@@ -34,6 +34,25 @@ jQuery(document).ready(function ($) {
           $( '#sec-site-header-menu' ).removeClass('open').css({'transform':'scale(0)'});
         }
   });
+
+
+$('h2.widget-title').html(function() {
+  return this.innerText.split(' ').map(function(e, i) {
+    return $('<span />', {
+      class: 'i' + i,
+      text: e
+    });
+  });
+});
+$('h1.widget-title').html(function() {
+  return this.innerText.split(' ').map(function(e, i) {
+    return $('<span />', {
+      class: 'i' + i,
+      text: e
+    });
+  });
+});
+
  /**
  * sub menu script
  */

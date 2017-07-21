@@ -353,7 +353,7 @@ a:hover {
 }
 
 a,
-a i,
+a,
 button,
 input,
 input[type="submit"] {
@@ -978,6 +978,7 @@ dt {
 .widget ul {
   padding-left: 0;
   list-style: none;
+  color: #000;
 }
 
 .widget li {
@@ -987,7 +988,7 @@ dt {
 }
 
 .widget a {
-  color: #797979;
+  color: #0c0c0c;
 }
 
 .search-form label {
@@ -4398,9 +4399,9 @@ input,
 select,
 textarea {
   color: #313131;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 400;
 }
 
@@ -4412,7 +4413,9 @@ textarea.single {
   font-size: 16px;
   font-size: 1rem;
 }
-
+h2.widget-title::first-word{
+  color: #fff !important;
+}
 h1,
 h2,
 h3,
@@ -4425,10 +4428,10 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  /*font-family: "Merriweather", sans-serif;*/
   color: #151515;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -5413,7 +5416,7 @@ article .comment-list,
 }
 
 .form-allowed-tags code {
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .required {
@@ -5621,11 +5624,11 @@ article .comment-list,
 .widget .widget-title {
   color: #2f2f2f;
   font-size: 20px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto",Helvetica,sans-serif;
   margin: 20px 0 30px 0;
   text-align: left;
   height: 36px;  
-  font-weight: 700;
+  font-weight: 100;
   position: relative;
 }
 .home-main-content .widget .widgettitle,
@@ -5634,11 +5637,11 @@ aside#secondary .widget .widgettitle,
 aside#secondary .widget .widget-title {
   color: #2f2f2f;
   font-size: 20px;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 20px 0 30px 0;
   text-align: left;
   height: 36px;  
-  font-weight: 700;
+  font-weight: 100;
   border-bottom: 5px solid #efefef;
   position: relative;
 }
@@ -5809,6 +5812,7 @@ aside#secondary .widget .widget-title:after {
 }
 
 .mp-tab-widget .thumb-post:hover {
+  background: #fff;
   box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.78);
 }
 
@@ -5961,8 +5965,7 @@ aside#secondary .widget .widget-title:after {
 .sb-round-thumb-widget figure img {}
 
 .sb-round-thumb-widget .entry-title a {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -6268,7 +6271,7 @@ img.desaturate {
 
 .section-title h3 {
   border-bottom: 1px solid #d9d9d9;
-  font-family: "Oxygen", cursive, sans-serif;
+  font-family: "Roboto",Helvetica,sans-serif
   font-size: 20px;
   font-size: 1.25rem;
   padding-bottom: 10px;
@@ -6484,7 +6487,7 @@ img.desaturate {
   padding: 15px;
   position: absolute;
   right: 0;
-  top: 180px;
+  top: 0;
   text-align: left;
   width: 100%;
   letter-spacing: 1px;
@@ -6546,7 +6549,7 @@ img.desaturate {
   font-size: 14px;
 }
 
-.post-icons span:not(:first-child) {
+aside#secondary .post-icons span:not(:first-child) {
   display: none;
 }
 .post-icons span span {
@@ -6604,9 +6607,7 @@ img.desaturate {
 .thumb-post .entry-cat-links .cat-links a:hover,
 .thumb-post .entry-cat-links .cat-links a:focus,
 .thumb-post .entry-cat-links .cat-links a:active {
-  background-color: #f60;
-  border-color: #ff6600;
-  color: #fff;
+  color: #ff6600;
 }
 
 .search-holder {
@@ -6626,7 +6627,7 @@ img.desaturate {
 .search-holder .button-search i,
 .search-holder .button-search i:visited {
   font-size: 20px;
-  color: #f60;
+  color: #fff;
 }
 
 .search-holder .button-search:hover,
@@ -6951,11 +6952,14 @@ body.home.blog .site-content {
 
 #primary {
   /*right*/
-  width: 73%;
+  width: 70%;
   padding-left: 15px;
   padding-right: 5%;
   /*left*/
   /*none*/
+}
+body.home.blog div#content {
+    padding: 0 27px 0 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -7061,7 +7065,7 @@ body.evision-no-sidebar #secondary {
   background-color: #fff;
   font-size: 14px;
   font-size: 0.875rem;
-  padding: 10px 30px 10px 14px;
+  padding: 20px 30px 20px 14px;
 }
 
 .top-header .wrap-inner {
@@ -7230,9 +7234,11 @@ span.notice-title:before {
 }
 
 .site-header .wrapper-site-identity {
-  padding: 15px 18px;
+  padding: 20px 18px;
 }
-
+h1::last-word {
+  color: #fff;
+}
 @media screen and (max-width: 767px) {
   .site-header .wrapper-site-identity {
     padding: 5px;
@@ -7250,7 +7256,6 @@ span.notice-title:before {
   font-size: 32px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .site-header .wrapper-site-identity .site-title a:hover {
@@ -7259,12 +7264,10 @@ span.notice-title:before {
 }
 
 .site-header .wrapper-site-identity .site-description {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
   margin-top: 0;
   font-size: 16px;
-  /* font-size: 0.813rem; */
   letter-spacing: 1px;
 }
 
@@ -7392,7 +7395,7 @@ span.notice-title:before {
 
 .wrap-nav {
   padding: 0 16px;
-  background: rgba(217, 217, 217, 0.35);
+ background: rgb(35, 34, 34);
 }
 
 .wrap-nav .container {
@@ -7417,7 +7420,7 @@ span.notice-title:before {
   float: right;
   text-align: right;
   width: 90px;
-  padding: 12px 0;
+  padding: 3px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -7577,10 +7580,10 @@ span.notice-title:before {
   display: block;
   font-size: 16px;
   outline-offset: -1px;
-  padding: 19px 27px 19px 0;
+  padding: 9px 27px 9px 0;
   text-transform: capitalize;
-  font-weight: 700;
-  color: #3c3c3c;
+  font-weight: 400;
+  color: #fff;
 }
 
 .main-navigation a:hover,
@@ -7626,7 +7629,7 @@ span.notice-title:before {
 }*/
 
 .main-navigation.sec-main-navigation ul ul {
-  background-color: #f2f2f2;
+  background-color: #232222;
   display: none;
   box-shadow: 0 1px 2px #8f8f8f;
 }
@@ -7635,12 +7638,12 @@ span.notice-title:before {
   .main-navigation.sec-main-navigation ul ul {
     float: left;
     position: absolute;
-    top: 3.7em;
+    top: 2.7em;
     z-index: 99999;
     width: 200px;
   }
   body.single .main-navigation.sec-main-navigation ul ul {
-    top: 3em;
+    top: 2.3em;
   }
   body.single .main-navigation.sec-main-navigation ul ul ul {
     top: 0;
@@ -7659,16 +7662,13 @@ span.notice-title:before {
 }
 
 .main-navigation.sec-main-navigation ul ul a {
-  border-top: 1px solid #eaeaea;
-  color: #050505;
+  color: #fff;
   font-size: 16px;
-  /*  font-size: 0.875rem;
-*/
   padding: 12px 18px;
   width: 100%;
   display: block;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .main-navigation.sec-main-navigation ul ul a:hover,
@@ -7723,6 +7723,7 @@ span.notice-title:before {
   .main-navigation.sec-main-navigation ul ul {
     background-color: transparent;
     padding-left: 15px;
+    box-shadow: none;
   }
   .main-navigation.sec-main-navigation ul ul a {
     border-top: none;
@@ -8987,11 +8988,14 @@ section.error-404.not-found h1:before {
   text-transform: uppercase;
   font-size: 16px;
   font-size: 1.25rem;
-  height: 36px;
+  height: 25px;
   border-left: 0;
   background: transparent;
   padding: 0 0 10px 0;
   position: relative;
+}
+h1.widget-title span.i1 {
+  color: #868686;
 }
 
 h1.widget-title:after {
@@ -9427,8 +9431,13 @@ button:active {
 }
 
 .card {
-  border: 1px solid #efefef;
+  border: 1px solid rgb(239, 239, 239);
   padding: 10px 10px 0 10px;
+  background: #fbfafa;
+}
+
+p.card-text {
+  text-align: justify;
 }
 
 .card h3{
@@ -9436,15 +9445,15 @@ button:active {
   padding: 0 0 6px 0;
   color: #2f2f2f;
   font-size: 20px;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .card h4 {
   color: #2f2f2f;
   font-size: 20px;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 .card-block {
@@ -9500,11 +9509,6 @@ a.category-more.odd-cat {
 }
 
 
-/*.search .status-publish:nth-child(2n),
-article.post:nth-child(2n), body.search article.page:nth-child(2n) {
-  float: right;
- }*/
-
 header.wrapper.top-header .controls {
   text-align: right;
   font-size: 24px;
@@ -9521,7 +9525,7 @@ header.wrapper.top-header .controls {
 #top-search form.search-form {
   width: 32%;
   float: right;
-  margin-top: 6px;
+  margin: 6px 0;
 }
 
 .nav-buttons.col-md-1 {
@@ -9541,7 +9545,7 @@ div {
 nav.wrapper.wrap-nav.fixed-nav {
   position: fixed;
   top: 0;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.92);
   left: 0;
   padding: 10px 38px;
   box-shadow: 0 0 1px #000;
@@ -9610,6 +9614,12 @@ aside#secondary .widget .widget-title {
 }
 section#onlinemag_sidebar_recent_post_widget-3 .sidebar-section {
   margin-left: 0;
+}
+span.i1 {
+    padding-left: 8px;
+    font-weight: 100;
+    color: #ff6600;
+    padding-right: 8px;
 }
 /* tag clouds */
 

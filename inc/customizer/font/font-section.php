@@ -11,6 +11,7 @@ $onlinemag_google_fonts = array(
     'Archivo+Narrow:400,400italic,700' => 'Archivo Narrow',
     'Bitter:400,400italic,700' => 'Bitter',
     'Cookie' => 'Cookie',
+    'Roboto'=> 'Roboto',
     'Exo:400,300,400italic,600,800' => 'Exo',
     'Kreon:400,300,700' => 'Kreon',
     'Lato:400,300,400italic,900,700' => 'Lato',
@@ -28,9 +29,9 @@ $onlinemag_google_fonts = array(
 );
 
 /*defaults values*/
-$onlinemag_customizer_defaults['onlinemag-font-family-Primary'] = 'Lato:400,300,400italic,900,700';
-$onlinemag_customizer_defaults['onlinemag-font-family-site-identity'] = 'Raleway:100,100italic,400,700';
-$onlinemag_customizer_defaults['onlinemag-font-family-title'] = 'Raleway:100,100italic,400,700';
+$onlinemag_customizer_defaults['onlinemag-font-family-Primary'] = 'Roboto';
+$onlinemag_customizer_defaults['onlinemag-font-family-site-identity'] = 'Roboto';
+$onlinemag_customizer_defaults['onlinemag-font-family-title'] = 'Roboto';
 
 
 /*section*/
