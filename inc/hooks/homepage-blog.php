@@ -57,9 +57,11 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                           $data_delay = 0;
                           while ($onlinemag_blogs_post_query->have_posts()) : $onlinemag_blogs_post_query->the_post(); 
                           if ($i == 1) { ?>
-                            <div class="card-img-top">
-                              <?php the_post_thumbnail(); ?>
-                            </div>
+                            <a href="<?php the_permalink(); ?>">
+                              <div class="card-img-top">
+                                <?php the_post_thumbnail(); ?>
+                              </div>
+                            </a>
                             <div class="card-block">
                               <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                               <?php 
