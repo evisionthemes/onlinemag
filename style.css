@@ -5821,14 +5821,31 @@ aside#secondary .widget .widget-title:after {
 
 .mp-tab-widget .thumb-post {
   background: rgba(239, 239, 239, 0.16);
-  box-shadow: 0 4px 8px 0 rgba(178, 178, 178, 0.13);
-  padding: 0 0 10px 0;
   border: 1px solid #efefef;
 }
 
+.mp-tab-widget h3,
+.mp-tab-widget .par{
+    padding:0 10px 10px 10px;
+}
+.mp-tab-widget h3{
+  padding-top: 10px;
+}
 .mp-tab-widget .thumb-post:hover {
   background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.78);
+}
+.post-content-footer.main-page span a {
+    color: #565656;
+}
+.post-content-footer.main-page span a:hover {
+    color: #ff6600;
+}
+.post-content-footer.main-page span a i{
+  padding-right: 6px;
+}
+
+span.comment {
+    float: right;
 }
 
 .footer-widget ul a:before {
@@ -6513,6 +6530,16 @@ img.desaturate {
   position: relative;
 }
 
+.thumb-post.main-page{
+  margin-bottom: 30px;
+}
+.thumb-post.main-page:hover .post-icons.mainpage-style {
+    background: rgba(16, 16, 16, 0.9);
+}
+section#onlinemag_full_content_blog_widget-3 h2 {
+    margin-top: 0;
+}
+
 .thumb-post figure,
 .thumb-post .sb-round-thumb-widget figure img,
 .sb-round-thumb-widget figure .thumb-post img {
@@ -7062,7 +7089,6 @@ body.evision-no-sidebar #secondary {
 
 .sidebar-sections #secondary .widget {
   margin-right: 0;
-  box-shadow: 0 2px 1px 0 rgba(178, 178, 178, 0.32);
   background: #fff;
   padding: 10px;
 }
@@ -8477,7 +8503,7 @@ a#slide-next {
 /* ==================================*/
 
 .wrap-below-banner .container {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .wrap-below-banner .thumb-post .overlay-post-content .post-icons {
@@ -8891,7 +8917,7 @@ body.search article.page {
 .page-content,
 .entry-summary,
 .entry-content {
-  margin-top: 1em;
+  margin-top: 0;
 }
 
 .entry-content .image-left {
@@ -9617,7 +9643,7 @@ header.wrapper.top-header .controls {
   background: #f60;
   text-align: center;
   float: right;
-  width: 57px;
+  width: 67px;
 }
 
 #top-search {
@@ -9698,8 +9724,9 @@ i.fa.fa-search.fa-close {
 }
 
 aside#secondary {
-  background: rgba(240, 237, 237, 0.31);
+  background: rgba(144, 144, 144, 0.31);
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 aside#secondary .widget .widgettitle,
@@ -9841,6 +9868,23 @@ span.edit-link:before {
   content: "\f044";
   font-family: fontAwesome;
   padding-right: 5px;
+}
+.post-icons.mainpage-style {
+    width: initial;
+    right: initial;
+    background: rgb(25, 33, 93);
+    box-shadow: none;
+    width: 137px;
+    height: 69px;
+    overflow: hidden;
+    border-radius: 0 49px 49px 0;
+}
+.post-content-footer.main-page {
+    background: #c3c2c1;
+    padding: 11px;
+}
+.bottom-post-content.mainpage {
+    padding: 0;
 }
 
 

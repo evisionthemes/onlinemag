@@ -61,7 +61,7 @@ if ( ! class_exists( 'Emag_Two_Column_Widget' ) ) :
                             while ( $all_posts->have_posts() ) {
                                 $all_posts->the_post(); ?>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="thumb-post">
+                                        <div class="thumb-post main-page">
                                             <figure class="post-img">
                                                 <?php 
                                                 if(has_post_thumbnail()){
@@ -76,20 +76,35 @@ if ( ! class_exists( 'Emag_Two_Column_Widget' ) ) :
                                                 <img src="<?php echo esc_url($url);?>">
                                             </a>
                                             </figure>
-                                            <div class="post-icons">
-                                                <span>
-                                                    <?php 
-                                                    $author_name   = get_the_author();
-                                                    $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
-                                                    <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
-                                                </span>
+                                            <div class="post-icons mainpage-style">                                               
                                                 <span>
                                                     <?php 
                                                     $archive_year   = get_the_time('Y');
                                                     ?>
                                                     <a href="<?php echo esc_url(get_year_link($archive_year)); ?>" class="icon"><i class="fa fa-calendar"></i> <?php echo esc_html(get_the_date());?></a>
+                                                </span>                                                
+                                            </div>
+                                            <div class="bottom-post-content mainpage">
+                                                <h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                                <div class="par">
+                                                    <?php
+                                                    $excerpt = onlinemag_words_count( $excerpt_length, get_the_excerpt() );
+                                                    echo esc_html( $excerpt );
+                                                    ?>
+                                                </div>
+                                                <!-- <div class="entry-cat-links">
+                                                    <span class="cat-links">
+                                                        <?php echo wp_kses_post(get_the_category_list( " ", "", get_the_id())); ?>
+                                                    </span>
+                                                </div> -->
+                                                <div class="post-content-footer main-page">
+                                                 <span>
+                                                    <?php 
+                                                    $author_name   = get_the_author();
+                                                    $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
+                                                    <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
                                                 </span>
-                                                <span>
+                                                    <span class="comment">
                                                     <a href="<?php the_permalink(); ?>" class="icon">
                                                         <i class="fa fa-comment"></i> 
                                                         <?php
@@ -100,19 +115,6 @@ if ( ! class_exists( 'Emag_Two_Column_Widget' ) ) :
                                                         ?>
                                                     </a>
                                                 </span>
-                                            </div>
-                                            <div class="bottom-post-content">
-                                                <h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                                <div class="par">
-                                                    <?php
-                                                    $excerpt = onlinemag_words_count( $excerpt_length, get_the_excerpt() );
-                                                    echo esc_html( $excerpt );
-                                                    ?>
-                                                </div>
-                                                <div class="entry-cat-links">
-                                                    <span class="cat-links">
-                                                        <?php echo wp_kses_post(get_the_category_list( " ", "", get_the_id())); ?>
-                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
