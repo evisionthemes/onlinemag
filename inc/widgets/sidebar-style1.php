@@ -1,13 +1,13 @@
 <?php
-if ( ! class_exists( 'Emag_Sidebar_Recent_Post_Widget' ) ) :
+if ( ! class_exists( 'Onlinemag_Sidebar_Recent_Post_Widget' ) ) :
 
     /**
      * Latest News Widget Class
      *
-     * @since Emag 1.0.0
+     * @since Onlinemag 1.0.0
      *
      */
-    class Emag_Sidebar_Recent_Post_Widget extends WP_Widget {
+    class Onlinemag_Sidebar_Recent_Post_Widget extends WP_Widget {
 
         function __construct() {
             parent::__construct(
@@ -226,12 +226,12 @@ if ( ! class_exists( 'Emag_Sidebar_Recent_Post_Widget' ) ) :
         /**
          * Load widget
          *
-         * @since Emag 1.0.0
+         * @since Onlinemag 1.0.0
          *
          */
         function onlinemag_recent_post_widget(){
             // Latest News widget
-            register_widget( 'Emag_Sidebar_Recent_Post_Widget' );
+            register_widget( 'Onlinemag_Sidebar_Recent_Post_Widget' );
         }
 
     endif;
