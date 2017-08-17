@@ -162,10 +162,10 @@ jQuery(document).ready(function ($) {
             offset: '0',
             handler: function(direction) {
               if( "down" == direction ){
-                containerselectedHeader.css({'maxWidth':'100%', 'paddingLeft': '0', 'paddingRight': '0'});
+                containerselectedHeader.css({'maxWidth':'100%'});
                 selectedHeader.addClass('fixed-nav');                
               } else {
-                containerselectedHeader.css({'maxWidth':'1170px', 'paddingLeft': '0', 'paddingRight': '0'});
+                containerselectedHeader.css({'maxWidth':'100%'});
                 selectedHeader.removeClass('fixed-nav');    
               }
              
