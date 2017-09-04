@@ -29,7 +29,7 @@ get_header(); ?>
 					<section class="error-404 not-found">
 						<div class="page-content">
 						<h1>4o4</h1>
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'flare' ); ?></p>	
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'onlinemag' ); ?></p>	
 							 <div id="404-search"> 
                                     <?php get_search_form();  ?>                       
                                 </div>						
