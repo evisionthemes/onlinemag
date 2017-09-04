@@ -37,7 +37,3 @@ a.cusbtn:visited {
   border-radius: 3px;
   outline: none;
 }
-
-li#accordion-section-onlinemag-update {
-    display: none !important;
-}

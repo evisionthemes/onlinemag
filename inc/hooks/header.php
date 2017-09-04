@@ -206,9 +206,7 @@ function onlinemag_header() {
             <?php } ?>
             <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-date']) { ?>
             <div class="timer col-md-6">
-               <?php $time = current_time('l, M j, Y');
-                    echo esc_attr($time);
-                    ?>
+                <?php echo date_i18n( get_option( 'date_format' ), strtotime( 'l, M j, Y' ) ); ?>
             </div>
         <?php } ?>
     </div>
@@ -305,7 +303,7 @@ function onlinemag_navigation_page_start() {
                         </div><!-- site-header-menu -->
                     </div>
                 </div> 
-                 <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-random']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
+                 <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-home-link']) || (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
                     <div class="nav-buttons col-md-1">                        
                         
                         <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
@@ -351,7 +349,7 @@ function onlinemag_navigation_page_start() {
                                         data-cycle-slides="> div">
                                             <?php $onlinemag_tinker_args = array(
                                                 'post_type' => 'post',
-                                                'posts_per_page' => absint( $onlinemag_customizer_all_values['onlinemag-header-no-of-tinker']) ,
+                                                'posts_per_page' => intval( $onlinemag_customizer_all_values['onlinemag-header-no-of-tinker']) ,
                                                 'ignore_sticky_posts' => 1,
                                             );
                                             $onlinemag_home_tinker_post_query = new WP_Query($onlinemag_tinker_args);

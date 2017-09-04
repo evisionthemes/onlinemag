@@ -6,8 +6,8 @@ Contributors: evisiontheme
 Tags: blog, news, one-column, two-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-logo, custom-menu, custom-colors, post-formats, threaded-comments, translation-ready, featured-images, theme-options, full-width-template, rtl-language-support, e-commerce
 
 Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 0.1.0
+Tested up to: 4.8.1
+Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -81,6 +81,12 @@ License: GPLv2
 Font Icons:
 * Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) 
 
+
+Google font:
+Roboto
+https://fonts.google.com/specimen/Roboto
+License: Apache License, Version 2.0
+
 == Image used in screenshot ==
 
 1) https://pixabay.com/en/football-teenager-greenery-sports-1533213/ (C) minibaby
@@ -104,6 +110,12 @@ Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
 
 == Changelog ==
+
+= - 1.0.0 - =
+* Bug fixed as mention by the reviewer.
+
+= - 0.1.1 - =
+* Bug fixed release.
 
 = - 0.1.0 - =
 * Initial release.

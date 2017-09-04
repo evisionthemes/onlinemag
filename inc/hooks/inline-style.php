@@ -35,7 +35,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
           .site-header,
           body:not(.home) #page .site-content, 
           body.home.blog #page .site-content {
-            background-color: #<?php echo esc_attr( $onlinemag_background_color );?>;
+            background-color: #<?php echo esc_html( $onlinemag_background_color );?>;
           }
         <?php
         } 
@@ -90,7 +90,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .widget .search-form .search-submit:focus,
             .main-navigation.sec-main-navigation ul li.current_page_item:before,
             .comments-area input[type="submit"]{
-              background-color: <?php echo esc_attr( $onlinemag_primary_color_option );?>;
+              background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
 
             .widget-title,
@@ -98,7 +98,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .wrapper-slider,
             .flip-container .front,
             .flip-container .back{
-              border-color: <?php echo esc_attr( $onlinemag_primary_color_option );?>; /*#2e5077*/
+              border-color: <?php echo esc_html( $onlinemag_primary_color_option );?>; /*#2e5077*/
             }
 
             @media screen and (min-width: 768px){
@@ -109,13 +109,13 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .main-navigation li.active > a:after,
             .main-navigation li.active > a:after,
             .main-navigation li.current_page_parent a:after {
-                background-color: <?php echo esc_attr( $onlinemag_primary_color_option );?>;
+                background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
               }
             }
 
             .latestpost-footer .moredetail a,
             .latestpost-footer .moredetail a:visited{
-              color: <?php echo esc_attr( $onlinemag_primary_color_option );?>;
+              color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
         <?php
         } 
@@ -126,7 +126,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .site-header .wrapper-site-identity .site-title a:visited,
             .site-header .wrapper-site-identity .site-branding .site-description,
             .page-inner-title .entry-header time {
-              color: <?php echo esc_attr( $onlinemag_site_identity_color_option );?>; /*#545C68*/
+              color: <?php echo esc_html( $onlinemag_site_identity_color_option );?>; /*#545C68*/
             }
         <?php
         } 

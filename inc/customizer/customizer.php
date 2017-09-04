@@ -110,7 +110,6 @@ $onlinemag_settings_controls['onlinemag-customizer-reset-settings'] =
     array(
         'setting' =>     array(
             'default'              => $onlinemag_customizer_defaults['onlinemag-customizer-reset-settings'],
-            'sanitize_callback'    => 'evision_customizer_sanitize_checkbox',
             'transport'            => 'postmessage',
         ),
         'control' => array(

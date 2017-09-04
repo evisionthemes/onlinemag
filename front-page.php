@@ -9,22 +9,6 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
     include( get_home_template() );
     }
 else{
-	if (
-		($onlinemag_customizer_all_values['onlinemag-feature-slider-enable'] != 1 ) &&
-		($onlinemag_customizer_all_values['onlinemag-blog-enable'] != 1 ) 
-		) {
-		if ( current_user_can( 'edit_theme_options' ) ) { ?>
-			<section class="wrapper display-info">
-				<div class="container">
-				<?php echo sprintf(
-					__( 'All Section are based on page and post. Atleast enable slider or blog Sections from customizer example for </br> slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections </br> %s, add widget as well on <b>Home/Front Page Widget</b>', 'onlinemag' ),
-					'<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">' . __( 'click here', 'onlinemag' ) . '</a>'
-					); ?>
-				</div>
-			</section>
-		<?php }	
-	}
-	else{
 	/**
 	 * onlinemag_action_front_page hook
 	 * @since onlinemag 1.0.0
@@ -33,6 +17,30 @@ else{
 	 * @sub_hooked onlinemag_action_front_page -  30
 	 */
 	do_action( 'onlinemag_action_front_page' );	
-	}
-	}
+	$onlinemag_static_page = absint($onlinemag_customizer_all_values['onlinemag-enable-static-page']);
+	if ($onlinemag_static_page == 1) { ?>
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
+
+					<?php
+					while ( have_posts() ) : the_post();
+
+						get_template_part( 'template-parts/content', 'page' );
+
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+
+					endwhile; // End of the loop.
+					?>
+
+				</main><!-- #main -->
+			</div><!-- #primary -->
+			<?php
+				get_sidebar();
+			?>
+	</div>
+	<?php }
+}
 get_footer();

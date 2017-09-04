@@ -29,9 +29,8 @@ $onlinemag_sections['onlinemag-feature-add'] =
 $onlinemag_customizer_defaults['onlinemag-header-add'] = '';
 $onlinemag_customizer_defaults['onlinemag-home-header-add-link'] = '#';
 $onlinemag_customizer_defaults['onlinemag-header-enable-search'] = 1;
-$onlinemag_customizer_defaults['onlinemag-header-enable-random'] = 1;
 $onlinemag_customizer_defaults['onlinemag-header-enable-home-link'] = 1;
-$onlinemag_customizer_defaults['onlinemag-header-enable-tinker'] = 1;
+$onlinemag_customizer_defaults['onlinemag-header-enable-tinker'] = 0;
 $onlinemag_customizer_defaults['onlinemag-header-tinker-title'] = __('Latest','onlinemag');
 $onlinemag_customizer_defaults['onlinemag-header-no-of-tinker'] = 5;
 $onlinemag_customizer_defaults['onlinemag-header-enable-date'] = 1;
@@ -44,20 +43,6 @@ array(
     ),
     'control' => array(
         'label'                 =>  __( 'Enable Search', 'onlinemag' ),
-        'section'               => 'onlinemag-feature-header-section',
-        'type'                  => 'checkbox',
-        'priority'              => 40,
-    )
-);
-
-
-$onlinemag_settings_controls['onlinemag-header-enable-random'] =
-array(
-    'setting' =>     array(
-        'default'              => $onlinemag_customizer_defaults['onlinemag-header-enable-random'],
-    ),
-    'control' => array(
-        'label'                 =>  __( 'Enable Random', 'onlinemag' ),
         'section'               => 'onlinemag-feature-header-section',
         'type'                  => 'checkbox',
         'priority'              => 40,

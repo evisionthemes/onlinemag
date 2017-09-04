@@ -5,6 +5,8 @@ global $onlinemag_repeated_settings_controls;
 global $onlinemag_customizer_defaults;
 
 /*defaults values*/
+$onlinemag_customizer_defaults['onlinemag-enable-static-page'] = 1;
+
 $onlinemag_customizer_defaults['onlinemag-default-layout'] = 'right-sidebar';
 $onlinemag_customizer_defaults['onlinemag-single-post-image-align'] = 'full';
 $onlinemag_customizer_defaults['onlinemag-excerpt-length'] = '50';
@@ -18,6 +20,20 @@ $onlinemag_sections['onlinemag-layout-options'] =
         'panel'          => 'onlinemag-theme-options',
     );
 
+    /*home page static page display*/
+$onlinemag_settings_controls['onlinemag-enable-static-page'] =
+    array(
+        'setting' =>     array(
+            'default'              => $onlinemag_customizer_defaults['onlinemag-enable-static-page'],
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Enable Static Front Page', 'onlinemag' ),
+            'description'           =>  __( 'If you disable this the static page will be disappera form the home page and other section from customizer will reamin as it is', 'onlinemag' ),
+            'section'               => 'onlinemag-layout-options',
+            'type'                  => 'checkbox',
+            'priority'              => 10,
+        )
+    );
 /*layout-options option responsive lodader start*/
 
 $onlinemag_settings_controls['onlinemag-default-layout'] =

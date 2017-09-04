@@ -29,8 +29,6 @@ require get_template_directory().'/inc/hooks/excerpt.php';
 
 require get_template_directory().'/inc/hooks/inline-style.php';
 
-require get_template_directory().'/inc/function/random-post.php';
-
 require get_template_directory().'/inc/function/words-count.php';
 
 require get_template_directory().'/inc/function/single-image-align.php';
