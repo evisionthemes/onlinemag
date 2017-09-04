@@ -13,11 +13,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-OnlineMag, a clean and professional WordPress Magazine or blog Theme that looks awesome on any devices. It is simple to configure the setting in order to make a dynamic website for online news portal, blogging etc. The widget-based homepage setting makes the OnlineMag very flexible and with the different widgets available in this theme you can build your site as per your need. For demo: http://demo.evisionthemes.com/onlinemag
+OnlineMag, A free magazine theme that has a beautiful design to help you start a professional looking news website. It can be used for any magazine niche such as tech, politics, sports, games, fashion, etc. With the available features you can optimize your website through clicks only and won’t have to write any code. The theme has responsive design, so, the contents of your website will look elegant on any device. For demo: http://demo.evisionthemes.com/onlinemag
 
 == Copyright ==
 
-OnlineMag WordPress Theme, Copyright 2014-2015 WordPress.org
+OnlineMag WordPress Theme, Copyright 2017 eVisionThemes
 OnlineMag is distributed under the terms of the GNU GPL
 
 
