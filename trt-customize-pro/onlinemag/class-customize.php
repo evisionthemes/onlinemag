@@ -75,7 +75,7 @@ final class onlinemag_Customize {
 				array(
         			'priority'       => 10,					
 					'pro_text' => esc_html__( 'OnlineMag Pro - Buy Now',  'onlinemag' ),
-					'pro_url'  => 'http://themepalace.com/downloads/onlinemag-pro'
+					'pro_url'  => 'https://evisionthemes.com/product/onlinemag-pro/'
 				)
 			)
 		);
