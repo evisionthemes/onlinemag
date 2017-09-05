@@ -8,6 +8,7 @@
  */
 
 ?>
+<article>
 <div class="wrapper page-inner-title">
 	<div class="container">
 	    <div class="row">

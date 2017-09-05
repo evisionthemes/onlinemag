@@ -9622,7 +9622,24 @@ a.category-more.odd-cat {
   border: 1px solid #dbdbdb;
   padding: 10px;
   background: #fff;
-  min-height: 599px;
+}
+
+.site-main{
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-column-count: 2;
+   -moz-column-count: 2;
+   -webkit-column-gap: 0;
+   -moz-column-gap: 0;
+   column-gap: 0;
+   position: relative;
+}
+
+article.post{
+   -webkit-column-break-inside: avoid;
+   page-break-inside: avoid;
+   break-inside: avoid;
+   width: 100%;
 }
 
 .wrapper-grid:hover {
