@@ -41,7 +41,7 @@ if ( ! class_exists( 'Onlinemag_Sidebar_Recent_Post_Widget' ) ) :
             ?>
             <?php
             $qargs = array(
-                'posts_per_page' => $post_number,
+                'posts_per_page' => absint($post_number),
                 'no_found_rows'  => true,
                 'ignore_sticky_posts'  => 1
             );
@@ -132,11 +132,10 @@ if ( ! class_exists( 'Onlinemag_Sidebar_Recent_Post_Widget' ) ) :
 
         function update( $new_instance, $old_instance ) {
             $instance = $old_instance;
-
-            $instance['title']            = strip_tags($new_instance['title']);
-            $instance['post_category']    = absint( $new_instance['post_category'] );
-            $instance['post_number']      = absint( $new_instance['post_number'] );
-            $instance['custom_class']     = esc_attr( $new_instance['custom_class'] );
+            $instance['title']            = isset(strip_tags($new_instance['title']) ) ? strip_tags($new_instance['title']) : '';
+            $instance['post_category']    = isset(absint( $new_instance['post_category'] ) ) ? absint( $new_instance['post_category'] ) : '';
+            $instance['post_number']      = isset(absint( $new_instance['post_number'] ) ) ? absint( $new_instance['post_number'] ) : '';
+            $instance['custom_class']     = isset(esc_attr( $new_instance['custom_class'] ) ) ? esc_attr( $new_instance['custom_class'] ) : '';
 
             return $instance;
         }

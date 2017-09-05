@@ -15,7 +15,7 @@ if( ! function_exists( 'onlinemag_excerpt_length' ) ) :
         if ( empty( $excerpt_length) ) {
             $excerpt_length = $length;
         }
-        return intval( $excerpt_length );
+        return absint( $excerpt_length );
 
     }
 

@@ -20,10 +20,8 @@ $onlinemag_google_fonts = array(
     'Oxygen:400,300,700' => 'Oxygen',
     'Playball' => 'Playball',
     'Ropa+Sans:400,400italic' => 'Ropa Sans',
-    'Squada+One' => 'Squada One',
     'Tangerine:400,700' => 'Tangerine',
     'Ubuntu:400,400italic,500,700' => 'Ubuntu',
-    'Varela+Round' => 'Varela Round',
     'Yanone+Kaffeesatz:400,300,700' => 'Yanone Kaffeesatz',
     'Raleway:100,100italic,400,700' => 'Raleway',
 );

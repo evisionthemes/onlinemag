@@ -7,7 +7,7 @@ Tags: blog, news, one-column, two-columns, left-sidebar, right-sidebar, custom-h
 
 Requires at least: 4.0
 Tested up to: 4.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -87,6 +87,70 @@ Roboto
 https://fonts.google.com/specimen/Roboto
 License: Apache License, Version 2.0
 
+Archivo Narrow
+https://fonts.google.com/specimen/Archivo+Narrow
+License: Open Font License
+
+Bitter
+https://fonts.google.com/specimen/Bitter
+License: Open Font License
+
+Cookie
+https://fonts.google.com/specimen/Cookie
+License: Open Font License
+
+Exo
+https://fonts.google.com/specimen/Exo
+License: Open Font License
+
+Kreon
+https://fonts.google.com/specimen/Kreon
+License: Open Font License
+
+Lato
+https://fonts.google.com/specimen/Lato
+License: Open Font License
+
+Merriweather
+https://fonts.google.com/specimen/Merriweather
+License: Open Font License
+
+Merriweather
+https://fonts.google.com/specimen/Merriweather
+License: Open Font License
+
+News Cycle
+https://fonts.google.com/specimen/News+Cycle
+License: Open Font License
+
+Oxygen
+https://fonts.google.com/specimen/Playball
+License: Open Font License
+
+Playball
+https://fonts.google.com/specimen/Playball
+License: Open Font License
+
+Tangerine
+https://fonts.google.com/specimen/Tangerine
+License: Open Font License
+
+Ropa Sans
+https://fonts.google.com/specimen/Ropa+Sans
+License: Open Font License
+
+Yanone Kaffeesatz
+https://fonts.google.com/specimen/Yanone+Kaffeesatz
+License: Open Font License
+
+Raleway
+https://fonts.google.com/specimen/Raleway
+License: Open Font License
+
+Ubuntu
+https://fonts.google.com/specimen/Ubuntu
+License: Ubuntu Font License
+
 == Image used in screenshot ==
 
 1) https://pixabay.com/en/football-teenager-greenery-sports-1533213/ (C) minibaby
@@ -110,6 +174,9 @@ Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
 
 == Changelog ==
+
+= - 1.0.1 - =
+* Bug fixed as mention by the reviewer.
 
 = - 1.0.0 - =
 * Bug fixed as mention by the reviewer.

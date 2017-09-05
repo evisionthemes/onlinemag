@@ -135,21 +135,18 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget' ) ) :
                 </div><!-- block holder -->
                 <div class="clear"></div>
                 <!--html generate-->
-                <?php wp_reset_postdata(); // Reset ?>
 
             <?php endif; ?>
             <?php
             echo $after_widget;
 
         }
-
         function update( $new_instance, $old_instance ) {
             $instance = $old_instance;
-
-            $instance['title']            = strip_tags($new_instance['title']);
-            $instance['post_category']    = absint( $new_instance['post_category'] );
-            $instance['post_number']      = absint( $new_instance['post_number'] );
-            $instance['custom_class']     = esc_attr( $new_instance['custom_class'] );
+            $instance['title']            = isset(strip_tags($new_instance['title']) ) ? strip_tags($new_instance['title']) : '';
+            $instance['post_category']    = isset(absint( $new_instance['post_category'] ) ) ? absint( $new_instance['post_category'] ) : '';
+            $instance['post_number']      = isset(absint( $new_instance['post_number'] ) ) ? absint( $new_instance['post_number'] ) : '';
+            $instance['custom_class']     = isset(esc_attr( $new_instance['custom_class'] ) ) ? esc_attr( $new_instance['custom_class'] ) : '';
 
             return $instance;
         }
@@ -193,7 +190,7 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget' ) ) :
                 <input class="widefat1" id="<?php echo absint($this->get_field_id( 'post_number' )); ?>" name="<?php echo esc_html($this->get_field_name( 'post_number' )); ?>" type="number" value="<?php echo absint( $post_number ); ?>" min="1" style="max-width:50px;" />
             </p>
             <p>
-                <label for="<?php echo absint($this->get_field_id( 'custom_class' )); ?>"><?php _e( 'Custom Class:', 'onlinemag' ); ?></label>
+                <label for="<?php echo esc_html($this->get_field_id( 'custom_class' )); ?>"><?php _e( 'Custom Class:', 'onlinemag' ); ?></label>
                 <input class="widefat" id="<?php echo absint($this->get_field_id( 'custom_class')); ?>" name="<?php echo esc_attr($this->get_field_name( 'custom_class' )); ?>" type="text" value="<?php echo esc_attr( $custom_class ); ?>" />
             </p>
             <?php

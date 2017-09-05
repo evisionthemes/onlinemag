@@ -122,7 +122,7 @@ function onlinemag_body_class( $onlinemag_body_classes ) {
 
 }
 endif;
-add_action( 'body_class', 'onlinemag_body_class', 10, 1);
+add_filter( 'body_class', 'onlinemag_body_class', 10, 1);
 
 if ( ! function_exists( 'onlinemag_before_page_start' ) ) :
 /**
@@ -323,12 +323,12 @@ function onlinemag_navigation_page_start() {
             </div>
         </div>
     </nav>
-     <header class="wrapper top-header">
-        <div class="container">
-            <div class="wrap-inner">
-                <div class="row">
-                    <div class="col-xs-10 col-sm-1 col-md-11 top-header-left">
-                        <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-tinker']) { ?>
+    <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-tinker']) { ?>
+         <header class="wrapper top-header">
+            <div class="container">
+                <div class="wrap-inner">
+                    <div class="row">
+                        <div class="col-xs-10 col-sm-1 col-md-11 top-header-left">
                             <div class="noticebar">
                                 <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>
                                     <span class="notice-title"><?php echo esc_html($onlinemag_customizer_all_values['onlinemag-header-tinker-title']); ?></span>
@@ -368,16 +368,16 @@ function onlinemag_navigation_page_start() {
                                     <div class="cycle-pager" id="slide-pager"></div>
                                 </div>
                             </div>                            
-                        <?php } ?>                        
-                    </div>   
-                     <div class="controls col-md-1">
-                        <a href="#" id="slide-prev-notice"><i class="fa fa-angle-left"></i></a>
-                        <a href="#" id="slide-next-notice"><i class="fa fa-angle-right"></i></a>
-                  </div>                   
+                        </div>   
+                         <div class="controls col-md-1">
+                            <a href="#" id="slide-prev-notice"><i class="fa fa-angle-left"></i></a>
+                            <a href="#" id="slide-next-notice"><i class="fa fa-angle-right"></i></a>
+                      </div>                   
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    <?php } ?>                        
     <section class="wrapper">
         <div id="content" class="site-content">
 <?php

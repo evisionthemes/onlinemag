@@ -44,12 +44,12 @@ if ( ! function_exists( 'onlinemag_home_blog' ) ) :
                   <div class="col-md-4">
                       <div class="card ">
                       <a href="<?php echo esc_url($onlinemag_cat_link); ?>">
-                        <p class="card-title"><?php echo esc_attr($onlinemag_category); ?></p>
+                        <p class="card-title"><?php echo esc_html($onlinemag_category); ?></p>
                       </a>
                       <?php 
                       $onlinemag_logs_args = array(
                           'post_type' => 'post',
-                          'category_name' => $onlinemag_category,
+                          'category_name' => esc_html($onlinemag_category),
                           'ignore_sticky_posts' => true,
                           'posts_per_page' => 4,
                       );
