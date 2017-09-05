@@ -143,10 +143,10 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget' ) ) :
         }
         function update( $new_instance, $old_instance ) {
             $instance = $old_instance;
-            $instance['title']            = isset(strip_tags($new_instance['title']) ) ? strip_tags($new_instance['title']) : '';
-            $instance['post_category']    = isset(absint( $new_instance['post_category'] ) ) ? absint( $new_instance['post_category'] ) : '';
-            $instance['post_number']      = isset(absint( $new_instance['post_number'] ) ) ? absint( $new_instance['post_number'] ) : '';
-            $instance['custom_class']     = isset(esc_attr( $new_instance['custom_class'] ) ) ? esc_attr( $new_instance['custom_class'] ) : '';
+            $instance['title']            = isset($new_instance['title'])  ? $new_instance['title'] : '';
+            $instance['post_category']    = isset( $new_instance['post_category'] ) ?  $new_instance['post_category'] : '';
+            $instance['post_number']      = isset( $new_instance['post_number'] ) ?  $new_instance['post_number'] : '';
+            $instance['custom_class']     = isset($new_instance['custom_class'] )  ? $new_instance['custom_class'] : '';
 
             return $instance;
         }
