@@ -33,6 +33,7 @@ get_header(); ?>
 
 			endwhile;
 			echo '<div>';
+			echo "<div class='clear'></div>";
 			the_posts_navigation();
 
 		else :
