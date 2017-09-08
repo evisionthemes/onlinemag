@@ -8,7 +8,6 @@
  */
 
 ?>
-<div class="content-start">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="wrapper-grid">
 			<header class="entry-header">
@@ -30,4 +29,3 @@
 			</footer><!-- .entry-footer -->
 		</div>
 	</article><!-- #post-## -->
-</div>

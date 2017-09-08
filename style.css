@@ -8905,7 +8905,7 @@ aside#secondary h2 {
 
 article.post,
 body.search article.page {
-  width: 50%;
+  width: 100%;
   float: left;
   padding: 0 7px;
   overflow: hidden;
