@@ -20,6 +20,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
+			echo '<div class="content-start">';
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -31,7 +32,7 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
-
+			echo '<div>';
 			the_posts_navigation();
 
 		else :
