@@ -30,7 +30,7 @@ get_header(); ?>
 						<div class="page-content">
 						<h1>4o4</h1>
 							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'onlinemag' ); ?></p>	
-							 <div id="404-search"> 
+							 <div id="pagentfound-search"> 
                                     <?php get_search_form();  ?>                       
                                 </div>						
      					</div><!-- .page-content -->
