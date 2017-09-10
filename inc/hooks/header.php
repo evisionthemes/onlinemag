@@ -328,7 +328,7 @@ function onlinemag_navigation_page_start() {
             <div class="container">
                 <div class="wrap-inner">
                     <div class="row">
-                        <div class="col-xs-10 col-sm-1 col-md-11 top-header-left">
+                        <div class="col-xs-12 col-sm-10 col-md-11 top-header-left">
                             <div class="noticebar">
                                 <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>
                                     <span class="notice-title"><?php echo esc_html($onlinemag_customizer_all_values['onlinemag-header-tinker-title']); ?></span>
@@ -369,7 +369,7 @@ function onlinemag_navigation_page_start() {
                                 </div>
                             </div>                            
                         </div>   
-                         <div class="controls col-md-1">
+                         <div class="controls col-md-1 hidden-xs">
                             <a href="#" id="slide-prev-notice"><i class="fa fa-angle-left"></i></a>
                             <a href="#" id="slide-next-notice"><i class="fa fa-angle-right"></i></a>
                       </div>                   
