@@ -89,7 +89,8 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .widget .search-form .search-submit,
             .widget .search-form .search-submit:focus,
             .main-navigation.sec-main-navigation ul li.current_page_item:before,
-            .comments-area input[type="submit"]{
+            .comments-area input[type="submit"],
+            header.wrapper.top-header .controls{
               background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
 
