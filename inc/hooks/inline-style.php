@@ -32,9 +32,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
         if( !empty($onlinemag_background_color) ){
         ?>
           .top-header,
-          .site-header,
-          body:not(.home) #page .site-content, 
-          body.home.blog #page .site-content {
+          .site-header{
             background-color: #<?php echo esc_html( $onlinemag_background_color );?>;
           }
         <?php
@@ -90,7 +88,15 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .widget .search-form .search-submit:focus,
             .main-navigation.sec-main-navigation ul li.current_page_item:before,
             .comments-area input[type="submit"],
-            header.wrapper.top-header .controls{
+            header.wrapper.top-header .controls,
+            a.category-more,
+            a.category-more.odd-cat,
+            .button.button-outline:hover,
+            .button.button-outline:focus,
+            .button.button-outline:active,
+            .button.button-outline:visited:hover,
+            .button.button-outline:visited:focus,
+            .button.button-outline:visited:active{
               background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
 
@@ -98,7 +104,8 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .widgettitle,
             .wrapper-slider,
             .flip-container .front,
-            .flip-container .back{
+            .flip-container .back,
+            a.category-more.odd-cat:hover, a.category-more:hover{
               border-color: <?php echo esc_html( $onlinemag_primary_color_option );?>; /*#2e5077*/
             }
 
@@ -115,8 +122,34 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             }
 
             .latestpost-footer .moredetail a,
-            .latestpost-footer .moredetail a:visited{
-              color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
+            .latestpost-footer .moredetail a:visited,
+            span.i1,
+            .site-title::first-letter,
+            p.card-title::first-letter,
+            span.i4,
+            .tagcloud a:hover,
+            .tagcloud a:focus,
+            .tagcloud a:before,
+            .posted-on a:hover,
+            .date a:hover,
+            .cat-links a:hover,
+            .tags-links a:hover,
+            .author a:hover,
+            .comments-link a:hover,
+            .edit-link a:hover,
+            .edit-link a:focus,
+            h1 a:hover,
+            h2 a:hover,
+            h3 a:hover,
+            h4 a:hover,
+            h5 a:hover,
+            h6 a:hover,
+            a:active,
+            a:hover,
+            .card:hover .card-title,
+            .site-header .wrapper-site-identity .site-title a:hover,
+            .search-holder .button-search:hover, .search-holder .button-search:hover i{
+              color: <?php echo esc_html( $onlinemag_primary_color_option ); ?>!important;
             }
         <?php
         } 
@@ -136,7 +169,7 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
         ?> 
         /*Primary*/
           html, body, p, button, input, select, textarea, pre, code, kbd, tt, var, samp , .main-navigation a, search-input-holder .search-field,
-          .widget .widgettitle, .widget .widget-title{
+          .widget .widgettitle, .widget .widget-title,.par{
           font-family: '<?php echo esc_attr( $onlinemag_font_family_primary_option ); ?>'; /*Lato*/
           }
         <?php
@@ -158,7 +191,8 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
           h3, h3 a,
           h4, h4 a,
           h5, h5 a,
-          h6, h6 a{
+          h6, h6 a,
+          .card p.card-title{
             font-family: '<?php echo esc_attr( $onlinemag_font_family_title_option ); ?>'; /*Lato*/
           }
         <?php
