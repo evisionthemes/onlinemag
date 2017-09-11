@@ -6976,7 +6976,7 @@ body.home .site-content {
 }
 
 body.home .site-content {
-  max-width: auto;
+  margin-top: 10px;
 }
 
 body.home.blog .site-content {
@@ -7146,7 +7146,7 @@ body.evision-no-sidebar #secondary {
   background-color: #fff;
   font-size: 14px;
   font-size: 0.875rem;
-  padding: 20px 30px 20px 14px;
+  padding: 20px 30px 10px 14px;
 }
 
 .top-header .wrap-inner {
@@ -9659,7 +9659,7 @@ header.wrapper.top-header .controls {
   font-weight: 100;
   text-align: center;
   float: right;
-  width: 92px;
+  width: 78px;
 }
 
 #top-search {
