@@ -4838,6 +4838,7 @@ dd {
   color: #fff;
   display: block;
   position: relative;
+  border-right: 1px solid #d6d6d6;
 }
 
 .evision-social-section ul a span,
