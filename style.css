@@ -10016,7 +10016,17 @@ span.edit-link:before {
     right: 3%;
   }
 }
-
+/* woocommerce*/
+a.add_to_cart_button:hover,
+a.checkout-button.button.alt.wc-forward:hover {
+  border: 1px solid #ebe9eb;
+}
+input#coupon_code {
+    min-width: 112px;
+}
+.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover{
+  color: #000;
+}
 
 /* ==================================*/
 
