@@ -29,7 +29,7 @@ if ( ! function_exists( 'onlinemag_featured_home_slider' ) ) :
     <section class="wrapper below-header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 pad0r left-content">
+                <div class="col-xs-12 col-sm-6 col-md-6 left-content">
                     <div class="wrapper-slider">
                         <?php if (1 == $onlinemag_feature_enable_arrow) { ?>
                             <div class="slider-controls">
@@ -147,7 +147,7 @@ if ( ! function_exists( 'onlinemag_featured_home_slider' ) ) :
                                     $url = get_template_directory_uri().'/assets/images/slider-post.jpg';
                                 }
                                 ?>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="col-xs-12 col-sm-6 col-md-6 pad0lr">
                                     <div class="thumb-post second">
                                         <figure class="post-img">
                                         <a href="<?php the_permalink(); ?>">
