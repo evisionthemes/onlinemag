@@ -192,7 +192,7 @@ function onlinemag_header() {
     ?>
     <div class="col-xs-12 col-sm-12 col-md-12 top-header-right">
         <?php if (has_nav_menu('social' )) { ?>
-            <div class="social-widget evision-social-section social-icon-only bottom-tooltip col-md-6">
+            <div class="social-widget evision-social-section social-icon-only bottom-tooltip col-md-6 col-xs-12 col-sm-6">
                 <?php
                    wp_nav_menu( array( 
                         'theme_location' => 'social', 
@@ -205,7 +205,7 @@ function onlinemag_header() {
             </div>
             <?php } ?>
             <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-date']) { ?>
-            <div class="timer col-md-6">
+            <div class="timer col-md-6 col-xs-12 col-sm-6">
                 <?php echo date_i18n( get_option( 'date_format' ), strtotime( 'l, M j, Y' ) ); ?>
             </div>
         <?php } ?>
