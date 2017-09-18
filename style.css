@@ -5968,6 +5968,7 @@ span.comment {
 
 .small-right-post-content-list .thumb-post {
   vertical-align: top;
+  margin: 0;
 }
 
 .small-right-post-content-list .thumb-post:before,
@@ -6639,8 +6640,6 @@ aside#secondary .right-post-content .thumb-post .post-icons a:hover {
 
 .thumb-post .post-icons a i {
   font-size: 14px;
-  /*font-size: 0.813rem;*/
-  margin-right: 5px;
 }
 
 .thumb-post .post-icons a:hover {
@@ -9706,7 +9705,7 @@ nav.wrapper.wrap-nav.fixed-nav {
 aside#secondary .widget ul li:before {
   content: "\f101";
   font-family: fontAwesome;
-  padding-right: 10px;
+  padding-right: 5px;
   color: #585858;
 }
 
@@ -10016,17 +10015,236 @@ span.edit-link:before {
     right: 3%;
   }
 }
+
+
 /* woocommerce*/
+
 a.add_to_cart_button:hover,
 a.checkout-button.button.alt.wc-forward:hover {
   border: 1px solid #ebe9eb;
 }
+
 input#coupon_code {
-    min-width: 112px;
+  min-width: 112px;
 }
-.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover{
+
+.woocommerce #payment #place_order:hover,
+.woocommerce-page #payment #place_order:hover {
   color: #000;
 }
+
+
+/*=================== 
+====tab panel =====
+=====================*/
+
+.tabs-menu {
+  float: left;
+  clear: both;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.tabs-menu li {
+  line-height: 23px;
+  float: left;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.tabs-menu li.current {
+  position: relative;
+  background-color: #f60;
+  z-index: 5;
+}
+
+.tabs-menu li a {
+  color: #000;
+  text-decoration: none;
+  padding: 13px 13px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+ul.tabs-menu li a:last-child {
+  padding: 13px 0;
+}
+
+.tab {
+  background-color: #fff;
+  float: left;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.tab-content {
+  display: none;
+}
+
+.first-tab {
+  display: block;
+}
+
+.tabs-container ul li:before {
+  content: "";
+  padding-right: 0;
+}
+
+ul.tabs-menu li {
+  border: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2 !important;
+  border-left: 0;
+  width: 33.3%;
+  text-align: center;
+}
+
+ul.tabs-menu li:first-child {
+  border-left: 1px solid #e2e2e2;
+}
+
+.tabs-menu .current a,
+.tabs-menu .current a:focus {
+  color: #ffffff !important;
+}
+
+.tabs-menu li a:hover {
+  color: #000!important;
+}
+
+ul.news-list {
+  margin: 0;
+}
+
+li.news-item {
+  padding: 10px 10px 3px 10px;
+}
+
+li.news-item,
+li.comment-list {
+  border: 1px solid #dadada;
+  margin: 12px 0;
+  display: table;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.news-list {
+  padding: 0;
+}
+
+li.news-item:first-child,
+li.comment-list:first-child {
+  border-top: 1px solid #dadada !important;
+}
+
+.news-thumb {
+  padding: 0;
+}
+
+.news-content {
+  padding-right: 0;
+}
+
+.news-content a {
+  font-size: 16px;
+}
+
+.news-content .date:before {
+  content: "\f133";
+  font-family: fontAwesome;
+  padding-right: 5px;
+}
+
+.news-content .date {
+  color: rgb(142, 139, 139);
+  font-size: 12px;
+}
+
+.comments-thumb {
+  width: 10%;
+  float: left;
+  margin-right: 15px;
+}
+
+li.comment-list {
+  padding: 10px 10px 15px 10px;
+  border: 1px solid #dadada;
+  margin: 12px 0;
+}
+
+.comments-content {
+  width: 90%;
+}
+
+ul.tabs-menu li:before,
+.tab ul li:before {
+  content: "" !important;
+  padding-right: 0 !important;
+}
+
+@media screen and (max-width:767px) {
+  .tabs-menu {
+    background: #fbfafa;
+    border: 1px solid #efefef;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tabs-menu {
+    display: grid;
+  }
+  ul.tabs-menu li {
+    width: 100%;
+  }
+  .thumb-post .overlay-post-content a,
+  .thumb-post .overlay-post-content a:visited {
+    font-size: 16px;
+  }
+}
+
+
+/* widget style 2 */
+
+.entry-comments-links {
+  background: #f7f7f7;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.entry-comments-links a {
+  padding-right: 10px;
+  color: #8e8b8b;
+}
+
+a.icon i.fa.fa-user,
+a.icon i.fa.fa-calendar,
+a.icon i.fa.fa-comment {
+  padding-right: 5px;
+}
+
+.left-post-content .thumb-post,
+.small-right-post-content-list {
+  border: 1px solid #d2d2d2;
+  padding: 10px;
+}
+
+.small-right-post-content h3.entry-title a {
+  font-size: 16px;
+}
+
+.small-right-post-content-list {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.widget_onlinemag_two_column_widget_style3 .pad0l {
+  padding-right: 0;
+}
+
+
+/*=================== 
+====tab panel ends =====*/
+
 
 /* ==================================*/
 

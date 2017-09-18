@@ -73,6 +73,15 @@ jQuery(document).ready(function ($) {
     $(this).hoverdir();
   });
 
+  // tab widget    
+  $(".tabs-menu a").click(function (event) {
+    event.preventDefault();
+    $(this).parent().addClass("current");
+    $(this).parent().siblings().removeClass("current");
+    var tab = $(this).attr("href");
+    $(".tab-content").not(tab).css("display", "none");
+    $(tab).fadeIn(1500);
+  });
 
   // Search
   var openBox = $('#search-bg');
@@ -149,28 +158,32 @@ jQuery(document).ready(function ($) {
   });
 
   // header fix
-      
-      var fixedBackgroundColor       = '#2d2d2d',
-          fixedBackgroundTransparent = 'transparent',
-          scrollTopPosition          = $('body').scrollTop(),
-          selectedHeader             = $('.wrap-nav'),
-          containerselectedHeader    = $('.wrap-nav .container'),
-          fixedBackgroundNoSlider    = selectedHeader.hasClass('fixed-nav');
-         
-          var waypoint = new Waypoint({
-            element: selectedHeader,
-            offset: '0',
-            handler: function(direction) {
-              if( "down" == direction ){
-                containerselectedHeader.css({'maxWidth':'100%'});
-                selectedHeader.addClass('fixed-nav');                
-              } else {
-                containerselectedHeader.css({'maxWidth':'100%'});
-                selectedHeader.removeClass('fixed-nav');    
-              }
-             
-            } 
-          });
+
+  var fixedBackgroundColor = '#2d2d2d',
+    fixedBackgroundTransparent = 'transparent',
+    scrollTopPosition = $('body').scrollTop(),
+    selectedHeader = $('.wrap-nav'),
+    containerselectedHeader = $('.wrap-nav .container'),
+    fixedBackgroundNoSlider = selectedHeader.hasClass('fixed-nav');
+
+  var waypoint = new Waypoint({
+    element: selectedHeader,
+    offset: '0',
+    handler: function (direction) {
+      if ("down" == direction) {
+        containerselectedHeader.css({
+          'maxWidth': '100%'
+        });
+        selectedHeader.addClass('fixed-nav');
+      } else {
+        containerselectedHeader.css({
+          'maxWidth': '100%'
+        });
+        selectedHeader.removeClass('fixed-nav');
+      }
+
+    }
+  });
   // add toggle class to search icon
   $(".nav-buttons.col-md-1").click(function () {
     $("i.fa.fa-search").toggleClass("fa-close");
