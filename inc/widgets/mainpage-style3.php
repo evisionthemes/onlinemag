@@ -26,7 +26,6 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
             $custom_class      = apply_filters( 'widget_custom_class', empty( $instance['custom_class'] ) ? '' : $instance['custom_class'], $instance, $this->id_base );
             $featured_image    = ! empty( $instance['featured_image'] ) ? $instance['featured_image'] : 'onlinemag-style-one';
             $excerpt_length    = ! empty( $instance['excerpt_length'] ) ? $instance['excerpt_length'] : 50;
-            $widget_color    = ! empty( $instance['widget_color'] ) ? $instance['widget_color'] : '';
 
             // Add Custom class
             if ( $custom_class ) {
@@ -169,13 +168,6 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
                     </div><!-- content-bottom-post -->
                 <!-- Main-panel Full Widget -->
                 </div><!-- block holder -->
-                <style type="text/css">
-                    #<?php echo esc_attr($onlinemag_widget_id); ?>.widget_onlinemag_two_column_widget_style3 .widget-title:after,
-                    #<?php echo esc_attr($onlinemag_widget_id); ?>.widget_onlinemag_two_column_widget_style3 .widgettitle:after,
-                    #<?php echo esc_attr($onlinemag_widget_id); ?> .mp-feature-widget .thumb-post .entry-cat-links .cat-links a {
-                        background-color: <?php echo esc_attr( $widget_color );?>;
-                    }
-                </style>
                 <?php wp_reset_postdata(); // Reset ?>
 
             <?php endif; ?>
@@ -189,7 +181,6 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
 
             $instance['title']            = strip_tags($new_instance['title']);
             $instance['post_category']    = absint( $new_instance['post_category'] );
-            $instance['widget_color']     = esc_attr( $new_instance['widget_color'] );
             $instance['custom_class']     = esc_attr( $new_instance['custom_class'] );
 
             return $instance;
@@ -201,12 +192,10 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
             $instance = wp_parse_args( (array) $instance, array(
                 'title'            => '',
                 'post_category'    => '',
-                'widget_color'     => '',
                 'custom_class'     => '',
             ) );
             $title            = strip_tags( $instance['title'] );
             $post_category    = absint( $instance['post_category'] );
-            $widget_color     = esc_attr( $instance['widget_color'] );
             $custom_class     = esc_attr( $instance['custom_class'] );
 
             ?>
@@ -228,10 +217,6 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
                 );
                 wp_dropdown_categories( $cat_args );
                 ?>
-            </p>
-            <p>
-                <label for="<?php echo $this->get_field_id( 'widget_color' ); ?>" style="display:block;"><?php _e( 'Widget Color:' ); ?></label> 
-                    <input class="widefat color-picker" id="<?php echo $this->get_field_id( 'widget_color' ); ?>" name="<?php echo $this->get_field_name( 'widget_color' ); ?>" type="text" value="<?php echo esc_attr( $widget_color ); ?>" />
             </p>
             <p>
                 <label for="<?php echo $this->get_field_id( 'custom_class' ); ?>"><?php _e( 'Custom Class:', 'onlinemag' ); ?></label>
