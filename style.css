@@ -5869,7 +5869,7 @@ span.comment {
 }
 
 .footer-widget ul a:before {
-  content: "\f054";
+  content: "\f101";
   font-family: fontAwesome;
   padding-right: 7px;
   color: #a2a2a2;
@@ -9936,7 +9936,7 @@ span.edit-link:before {
     padding-left: 0;
   }
   .top-header {
-    padding: 10px 16px 10px 14px;
+    padding: 10px 16px 10px 10px;
   }
   .wrap-nav .container {
     padding: 0;
