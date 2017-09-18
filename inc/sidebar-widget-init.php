@@ -77,3 +77,5 @@ add_action( 'widgets_init', 'onlinemag_widgets_init' );
 
 require get_template_directory() . '/inc/widgets/mainpage-style1.php';
 require get_template_directory() . '/inc/widgets/sidebar-style1.php';
+require get_template_directory() . '/inc/widgets/mainpage-style3.php';
+require get_template_directory() . '/inc/widgets/sidebar-tab.php';
