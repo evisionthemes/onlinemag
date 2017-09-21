@@ -10056,7 +10056,6 @@ input#coupon_code {
 
 .tabs-menu li.current {
   position: relative;
-  background-color: #f60;
   z-index: 5;
 }
 
