@@ -283,10 +283,7 @@ function onlinemag_navigation_page_start() {
                         <button id="sec-menu-toggle" class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><span class="fa fa-bars"></span></button>
                         <div id="sec-site-header-menu" class="site-header-menu">
                             <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                        <button id="mobile-menu-toggle-close" class="menu-toggle" aria-controls="secondary-menu"><span class="fa fa-close"></span></button>
-                                    </div>
+                                <div class="row">                                   
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <nav id="sec-site-navigation-mobile" class="main-navigation sec-main-navigation" role="navigation" aria-label="secondary-menu">
                                         <?php
@@ -328,7 +325,7 @@ function onlinemag_navigation_page_start() {
             <div class="container">
                 <div class="wrap-inner">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-10 col-md-11 top-header-left">
+                        <div class="col-xs-12 col-sm-9 col-md-9 top-header-left">
                             <div class="noticebar">
                                 <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-tinker-title'])) { ?>
                                     <span class="notice-title"><?php echo esc_html($onlinemag_customizer_all_values['onlinemag-header-tinker-title']); ?></span>
