@@ -8249,7 +8249,9 @@ button#sec-menu-toggle:active {
   overflow: hidden;
   position: relative;
 }
-
+.wrapper-slider a {
+  font-size: 24px;
+}
 .wrapper-slider:before,
 .wrapper-slider:after {
   content: " ";
@@ -9990,6 +9992,9 @@ span.edit-link:before {
   }  
   body.home.blog div#content {
     padding: 0 8px 0 5px;
+  }
+  .site-header .wrapper-site-identity .site-description{
+    font-size: 14px;
   }
 }
 
