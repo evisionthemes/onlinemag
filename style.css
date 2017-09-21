@@ -7525,6 +7525,7 @@ span.notice-title:before {
   clear: both;
 }
 
+
 @media screen and (max-width: 1199px) {
   .nav-holder {
     text-align: right;
@@ -9986,13 +9987,10 @@ span.edit-link:before {
   }
   .mainslider-right-content .thumb-post {
     border-bottom: 10px solid #fff;
-  }
-  .col-xs-offset-2 {
-    margin-left: 0;
-}
-body.home.blog div#content {
+  }  
+  body.home.blog div#content {
     padding: 0 8px 0 5px;
-}
+  }
 }
 
 @media screen and (max-width:400px) {
