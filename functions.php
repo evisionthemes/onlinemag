@@ -39,7 +39,7 @@ function onlinemag_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
-	add_image_size( 'onlinemag-main-slider', 765, 444, true );
+	add_image_size( 'onlinemag-main-slider', 1140, 680, true );
 	add_image_size( 'onlinemag-right-slide', 360, 320, true );
 	add_image_size( 'onlinemag-recent-sidebar', 165, 165, true );
 
