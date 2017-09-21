@@ -6,14 +6,11 @@ jQuery(window).load(function () {
 
 // On Document Ready
 jQuery(document).ready(function ($) {
-  // Full Navigation
-  // right menu
-  $('#menu-toggle').click(function () {
-    $('#site-header-menu').addClass('open').css({
-      'transform': 'scale(1)',
-      'borderRadius': '0'
-    });
+  //hide and show nav 
+  $("button#sec-menu-toggle").click(function () {
+    $("div#sec-site-header-menu").slideToggle("1500");
   });
+
 
   //hide and show search 
   $(".nav-buttons").click(function () {
@@ -28,20 +25,6 @@ jQuery(document).ready(function ($) {
       });
     }
 
-  });
-
-  // left menu
-  $('#sec-menu-toggle').click(function () {
-    $('#sec-site-header-menu').addClass('open').css({
-      'transform': 'scale(1)'
-    });
-  });
-  $('#mobile-menu-toggle-close').click(function () {
-    if ($('#sec-site-header-menu').hasClass('open')) {
-      $('#sec-site-header-menu').removeClass('open').css({
-        'transform': 'scale(0)'
-      });
-    }
   });
 
 

@@ -77,26 +77,22 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .back-tonav:visited,
             .wrap-service .box-container .box-inner:hover .box-content, 
             .wrap-service .box-container .box-inner:focus .box-content,
-            .search-holder .search-bg.search-open form,
             .top-header .noticebar .notice-title,
             .top-header .timer,
             .nav-buttons,
             .widget .widgettitle:after,
             .widget .widget-title:after,
-            .widget input.search-submit,
-            .widget .search-form .search-submit,
-            .widget .search-form .search-submit:focus,
             .main-navigation.sec-main-navigation ul li.current_page_item:before,
             .comments-area input[type="submit"],
-            header.wrapper.top-header .controls,
-            a.category-more,
-            a.category-more.odd-cat,
+            a.category-more:hover,
+            a.category-more.odd-cat:hover,
             .button.button-outline:hover,
             .button.button-outline:focus,
             .button.button-outline:active,
             .button.button-outline:visited:hover,
             .button.button-outline:visited:focus,
-            .button.button-outline:visited:active{
+            .button.button-outline:visited:active,
+            .tabs-menu li.current{
               background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
 
@@ -105,7 +101,8 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .wrapper-slider,
             .flip-container .front,
             .flip-container .back,
-            a.category-more.odd-cat:hover, a.category-more:hover{
+            a.category-more.odd-cat:hover, a.category-more:hover,
+            a.category-more{
               border-color: <?php echo esc_html( $onlinemag_primary_color_option );?>; /*#2e5077*/
             }
 
@@ -148,8 +145,9 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             a:hover,
             .card:hover .card-title,
             .site-header .wrapper-site-identity .site-title a:hover,
-            .search-holder .button-search:hover, .search-holder .button-search:hover i{
-              color: <?php echo esc_html( $onlinemag_primary_color_option ); ?>!important;
+            .search-holder .button-search:hover, .search-holder .button-search:hover i,
+            a.category-more{
+              color: <?php echo esc_html( $onlinemag_primary_color_option ); ?> !important;
             }
         <?php
         } 
