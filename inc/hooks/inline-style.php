@@ -121,7 +121,6 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .latestpost-footer .moredetail a,
             .latestpost-footer .moredetail a:visited,
             span.i1,
-            .site-title::first-letter,
             p.card-title::first-letter,
             span.i4,
             .tagcloud a:hover,
