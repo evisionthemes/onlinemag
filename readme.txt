@@ -175,7 +175,7 @@ Note:
 
 == Changelog ==
 
-= - 1.0.5 - =
+= - 1.0.6 - =
 * change mobile menu and button styles.
 
 = - 1.0.5 - =
