@@ -10293,3 +10293,21 @@ a.icon i.fa.fa-comment {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* image height width fixing */
+@media screen and (min-width: 767px) {  
+  .wrapper-slider figure.post-img {
+      height: 316px;
+  }
+
+  .thumb-post.second figure.post-img {
+      height: 156px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .thumb-post .overlay-post-content{
+    background-color: #000;
+  }
+}
