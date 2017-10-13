@@ -7,7 +7,7 @@ Tags: blog, news, one-column, two-columns, left-sidebar, right-sidebar, custom-h
 
 Requires at least: 4.0
 Tested up to: 4.8.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -157,6 +157,7 @@ License: Ubuntu Font License
 2) https://pixabay.com/en/woman-girl-people-female-hand-792162/ (C) kaboompics
 3) https://pixabay.com/en/mobile-phone-smartphone-3d-1875813/ (C) FunkyFocus
 4) https://pixabay.com/en/girl-woman-female-lady-attractive-791686/ (C) kaboompics
+https://pixabay.com/en/new-york-city-brooklyn-bridge-night-336475/ (c)Free-Photos
 
 == Installation ==
 
@@ -174,6 +175,10 @@ Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
 
 == Changelog ==
+
+= - 1.0.7 - =
+* Fixed the banner image issue and hover effects.
+* Added new screenshorts.
 
 = - 1.0.6 - =
 * change mobile menu and button styles.
