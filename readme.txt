@@ -178,6 +178,7 @@ Note:
 
 = - 1.0.7 - =
 * Fixed the banner image issue and hover effects.
+* Added new screenshorts.
 
 = - 1.0.6 - =
 * change mobile menu and button styles.
