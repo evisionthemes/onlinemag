@@ -93,7 +93,7 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget_Style3' ) ) :
                                             <div class="entry-comments-links">                                          
                                                 <span>
                                                     <?php 
-                                                    $author_name   = get_the_author();
+                                                    $author_name   = get_the_author_meta('display_name');
                                                     $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
                                                     <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
                                                 </span>

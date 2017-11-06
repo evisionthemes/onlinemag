@@ -91,7 +91,7 @@ if ( ! function_exists( 'onlinemag_featured_home_slider' ) ) :
                                                             <div class="post-icons">
                                                                 <span>
                                                                     <?php 
-                                                                    $author_name   = get_the_author();
+                                                                    $author_name   = get_the_author_meta('display_name');
                                                                     $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
                                                                     <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
                                                                 </span>
@@ -159,7 +159,7 @@ if ( ! function_exists( 'onlinemag_featured_home_slider' ) ) :
                                             <div class="post-icons">
                                                 <span>
                                                     <?php 
-                                                    $author_name   = get_the_author();
+                                                    $author_name   = get_the_author_meta('display_name');
                                                     $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
                                                     <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
                                                 </span>

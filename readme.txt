@@ -6,8 +6,8 @@ Contributors: evisiontheme
 Tags: blog, news, one-column, two-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-logo, custom-menu, custom-colors, post-formats, threaded-comments, translation-ready, featured-images, theme-options, full-width-template, rtl-language-support, e-commerce
 
 Requires at least: 4.0
-Tested up to: 4.8.2
-Stable tag: 1.0.8
+Tested up to: 4.8.3
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -175,6 +175,10 @@ Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
 
 == Changelog ==
+
+= - 1.0.9 - =
+* Display author name managed.
+* Some other minor fixing.
 
 = - 1.0.8 - =
 * Title half hidden issue fixed.

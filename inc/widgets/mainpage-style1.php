@@ -92,15 +92,10 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget' ) ) :
                                                     echo esc_html( $excerpt );
                                                     ?>
                                                 </div>
-                                                <!-- <div class="entry-cat-links">
-                                                    <span class="cat-links">
-                                                        <?php echo wp_kses_post(get_the_category_list( " ", "", get_the_id())); ?>
-                                                    </span>
-                                                </div> -->
                                                 <div class="post-content-footer main-page">
                                                  <span>
                                                     <?php 
-                                                    $author_name   = get_the_author();
+                                                    $author_name   = get_the_author_meta('display_name');
                                                     $author_url   = get_author_posts_url( get_the_author_meta( 'ID' ) );?>
                                                     <a href="<?php echo esc_url($author_url); ?>" class="icon" title=""><i class="fa fa-user"></i><span><?php echo esc_html($author_name ); ?></span></a>
                                                 </span>
@@ -109,8 +104,8 @@ if ( ! class_exists( 'Onlinemag_Two_Column_Widget' ) ) :
                                                         <i class="fa fa-comment"></i> 
                                                         <?php
                                                             $commentscount = get_comments_number();
-                                                            if($commentscount == 1): $commenttext = 'comment'; endif;
-                                                            if($commentscount > 1 || $commentscount == 0): $commenttext = 'comments'; endif;
+                                                            if($commentscount == 1): $commenttext = __('comment','onlinemag'); endif;
+                                                            if($commentscount > 1 || $commentscount == 0): $commenttext = __('comments','onlinemag'); endif;
                                                             echo (esc_html($commentscount).' '.(esc_html($commenttext)));
                                                         ?>
                                                     </a>
