@@ -135,7 +135,7 @@ jQuery(document).ready(function ($) {
 
   // back to top animation 
   $('#gotop').click(function () {
-    $('body').animate({
+    $('html, body').animate({
       scrollTop: '0px'
     }, 1000);
   });
@@ -175,13 +175,13 @@ jQuery(document).ready(function ($) {
   // back to top animation
 
   $('#gotop').click(function () {
-    $('body').animate({
+    $('html, body').animate({
       scrollTop: '0px'
     }, 1000);
   });
 
   $(window).scroll(function () {
-    var scrollTopPosition = $('body').scrollTop();
+    var scrollTopPosition = $('html,body').scrollTop();
     if (scrollTopPosition > 240) {
       $('#gotop').css({
         'bottom': 25
