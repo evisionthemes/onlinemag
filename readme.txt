@@ -178,7 +178,7 @@ Note:
 == Changelog ==
 
 = - 1.0.9 - =
-* some design changes.
+* some design changes, bug report fixing.
 
 = - 1.0.8 - =
 * Title half hidden issue fixed.
