@@ -39,6 +39,9 @@ if ( ! class_exists( 'Onlinemag_Sidebar_Tab_post' ) ) :
             $tab_id = 'tabbed-' . $this->number;
 
            echo $args['before_widget'];
+           
+           if ( $title ) echo $before_title . $title . $after_title;
+
            ?>
            <div class="tabs-container">
             <ul class="tabs-menu">

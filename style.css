@@ -9,6 +9,7 @@ For theme instructions : http://doc.evisionthemes.com/onlinemag
 For preview  : http://demo.evisionthemes.com/onlinemag
 For support: https://evisionthemes.com/support
 Follow Us: https://www.facebook.com/evisionthemes
+
 Version: 1.0.9
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -6221,7 +6222,7 @@ img.desaturate {
 
 .fixed-nav {
   top: 0;
-  z-index: 9999;
+  z-index: 99999999;
   -webkit-transition: background-color 0.5s linear;
   -moz-transition: background-color 0.5s linear;
   -ms-transition: background-color 0.5s linear;
