@@ -3,8 +3,13 @@ Theme Name: OnlineMag
 Theme URI: http://evisionthemes.com/product/onlinemag/
 Author: eVision Themes
 Author URI: http://evisionthemes.com
-Description: OnlineMag, A free magazine theme that has a beautiful design to help you start a professional looking news website. It can be used for any magazine niche such as tech, politics, sports, games, fashion, etc. With the available features you can optimize your website through clicks only and won’t have to write any code. The theme has responsive design, so, the contents of your website will look elegant on any device. For demo: http://demo.evisionthemes.com/onlinemag
-Version: 1.0.8
+Description: OnlineMag, A  clean free magazine theme that has a beautiful design to help you start a professional looking news website. It can be used for any magazine niche such as tech, politics, sports, games, fashion, etc. With the available features you can optimize your website through clicks only and won’t have to write any code. The theme has responsive design, so, the contents of your website will look elegant on any device.  This theme is translation ready.
+You can find the following sections on this theme like custom menus, news ticker, social icons, header advertisement banner, featured slider, blog carousel, multiple widget layouts - grid widget, two column widget, listing widget, advertisement widget, footer widgets etc. including dedicated support team on official website.
+For theme instructions : http://doc.evisionthemes.com/onlinemag  
+For preview  : http://demo.evisionthemes.com/onlinemag
+For support: https://evisionthemes.com/support
+Follow Us: https://www.facebook.com/evisionthemes
+Version: 1.0.9
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: onlinemag
@@ -976,6 +981,13 @@ dt {
 
 .widget {
   margin: 0;
+}
+
+#secondary .widget:last-child {
+  margin-bottom: 0;
+}
+.rpwwt-widget ul li{
+  margin-top: 0 !important;
 }
 
 .widget .widgettitle,
@@ -7488,6 +7500,7 @@ span.notice-title:before {
   -ms-transition: max-width 0.3s ease;
   -o-transition: max-width 0.3s ease;
   transition: max-width 0.3s ease;
+  position: relative;
 }
 
 .wrap-nav .wrap-inner {
@@ -9526,7 +9539,7 @@ p.card-title::first-letter {
   display: none;
   z-index: 99999;
   position: absolute;
-  right: 8%;
+  right: 0;
   margin-top: 17px;
 }
 
