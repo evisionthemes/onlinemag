@@ -216,6 +216,7 @@ function onlinemag_header() {
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="site-branding">
+                            <?php onlinemag_the_custom_logo(); ?>
                             <?php
                                 if ( is_front_page() && is_home() ) : ?>
                                     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -229,7 +230,7 @@ function onlinemag_header() {
                                     <p class="site-description"><?php echo esc_html($description); /* WPCS: xss ok. */ ?></p>
                                 <?php
                                 endif; ?>
-                            <?php onlinemag_the_custom_logo(); ?>
+                            
                         </div><!-- .site-branding -->
                     </div>
                     <?php if (!empty($onlinemag_customizer_all_values['onlinemag-header-add'])) { ?>

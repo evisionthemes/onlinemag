@@ -7357,7 +7357,7 @@ span.notice-title:before {
   color: #313131;
   font-size: 45px;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: bold;
 }
 
