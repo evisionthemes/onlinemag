@@ -179,6 +179,9 @@ Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
 
 == Changelog ==
+= - 1.1.0 - =
+* Display author nickname managed and hader advertising banner image recommended .
+* Some other minor fixing.
 
 = - 1.0.9 - =
 * Display author name managed.
