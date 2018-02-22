@@ -125,7 +125,7 @@ $onlinemag_settings_controls['onlinemag-header-add'] =
         ),
         'control' => array(
             'label'                 =>  __( 'Header Banner Addvertise', 'onlinemag' ),
-            'description'           =>  __( 'Upload Image to be on header banner (recomended size 726px*409px)', 'onlinemag' ),
+            'description'           =>  __( 'Upload Image to be on header banner (recomended size 726px*90px)', 'onlinemag' ),
             'section'               => 'onlinemag-feature-add',
             'type'                  => 'image',
             'priority'              => 20,
