@@ -92,7 +92,8 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
             .button.button-outline:visited:hover,
             .button.button-outline:visited:focus,
             .button.button-outline:visited:active,
-            .tabs-menu li.current{
+            .tabs-menu li.current,
+            body.home.page h1.entry-title:before{
               background-color: <?php echo esc_html( $onlinemag_primary_color_option );?>;
             }
 

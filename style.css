@@ -10320,3 +10320,24 @@ a.icon i.fa.fa-comment {
     background-color: #000;
   }
 }
+
+body.home.page h1.entry-title {
+  position: relative;
+}
+
+body.home.page h1.entry-title:after {
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #000;
+    margin-top: 4px;
+}
+
+body.home.page h1.entry-title:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: -7px;
+  z-index: 9;
+}
