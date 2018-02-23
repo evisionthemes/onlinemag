@@ -176,8 +176,9 @@ if( ! function_exists( 'onlinemag_inline_style' ) ) :
         if( !empty($onlinemag_font_family_site_identity_option) ){
         ?> 
           /*Site identity / logo & tagline*/
+          .site-header .wrapper-site-identity .site-description,
           .site-header .wrapper-site-identity .site-title a, .site-header .wrapper-site-identity .site-description {
-          font-family: '<?php echo esc_attr( $onlinemag_font_family_site_identity_option ); ?>'; /*Lato*/
+          font-family: '<?php echo esc_attr( $onlinemag_font_family_site_identity_option ); ?>' !important; /*Lato*/
           }
         <?php
         } 
