@@ -9696,8 +9696,9 @@ header.wrapper.top-header .controls {
   font-size: 25px;
   font-weight: 100;
   text-align: center;
-  width: 130px;
+  width: 98px;
   float: right;
+  padding: 0;
 }
 
 #top-search {
@@ -10328,8 +10329,8 @@ body.home.page h1.entry-title {
 body.home.page h1.entry-title:after {
     position: absolute;
     width: 200px;
-    height: 3px;
-    background: #000;
+    height: 5px;
+    background: #efefef;
     margin-top: 4px;
 }
 
@@ -10337,7 +10338,11 @@ body.home.page h1.entry-title:before {
   content: "";
   position: absolute;
   width: 80px;
-  height: 3px;
-  bottom: -7px;
+  height: 5px;
+  bottom: -9px;
   z-index: 9;
+}
+
+body.home.page .image-full {
+  margin-top: 20px;
 }
