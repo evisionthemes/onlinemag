@@ -301,7 +301,7 @@ function onlinemag_navigation_page_start() {
                         </div><!-- site-header-menu -->
                     </div>
                 </div> 
-                 <?php if ((1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search'])) { ?>
+                 <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
                     <div class="nav-buttons col-md-1">                        
                         
                         <?php if (1 == $onlinemag_customizer_all_values['onlinemag-header-enable-search']) { ?>
