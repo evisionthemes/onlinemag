@@ -7356,8 +7356,6 @@ span.notice-title:before {
 .site-header .wrapper-site-identity .site-title a {
   color: #313131;
   font-size: 45px;
-  letter-spacing: 3px;
-  /*text-transform: uppercase;*/
   font-weight: bold;
 }
 
