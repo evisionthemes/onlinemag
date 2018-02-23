@@ -9564,6 +9564,11 @@ button:active {
 
 .category-grid {
   display: flex;
+  display:-webkit-flex;
+  display:-webkit-box;
+  display:-moz-flex;
+  display:-moz-box;
+  display:-ms-flexbox;
 }
 
 p.card-text {
